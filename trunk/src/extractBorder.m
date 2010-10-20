@@ -154,11 +154,3 @@ end
 function [ invertedDir ] = invertDir(dir)
     invertedDir = mod(dir + 4, 8);
 end
-
-function [ isBckg ] = isBackground(pixelValue)
-    isBckg = (pixelValue == 255);
-end
-
-function [ isBckg ] = isObject(pixelValue)
-    isBckg = (pixelValue == 0);
-end
