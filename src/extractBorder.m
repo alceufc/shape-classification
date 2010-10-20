@@ -5,7 +5,8 @@ function [ X, Y ] = extractBorder( img )
         img = im2bw(img);
     end;
     
-    % TODO: error message if the top left corner is black.
+    % Pad the array with 255 (background) to avoid an error if the object is located at the border of the image.
+    img = padarray(img, 1, 255);
     
     [firstPixRow, firstPixCol] = findStartPixelPos(img);
     [secondPixRow, secondPixCol, fsDir] = findSecondPixelPos(img, firstPixRow, firstPixCol);
@@ -42,6 +43,10 @@ function [rowVector, colVector] = contourFollowing(img, secondPixRow, secondPixC
         [curPixRow, curPixCol, pcDir] = findNextPixel(curPixRow, curPixCol, pcDir, img);
     end;
     
+    borderElems = borderElems + 1;
+    rowVector(borderElems) = curPixRow;
+    colVector(borderElems) = curPixCol;
+    
     % Slice border arrays to the correct size.
     rowVector = rowVector(1:borderElems);
     colVector = colVector(1:borderElems);
@@ -62,7 +67,7 @@ function [newPixRow, newPixCol, newPcDir] = findNextPixel(curPixRow, curPixCol, 
         [aRow, aCol] = chainPoint(curPixRow, curPixCol, dirA);
         [bRow, bCol] = chainPoint(curPixRow, curPixCol, dirB);
         
-        if img(aRow, aCol) == 1 && img(bRow, bCol) == 0
+        if isBackground(img(aRow, aCol)) && isObject(img(bRow, bCol))
             newPixRow = aRow;
             newPixCol = aCol;
             newPcDir = dirA;
@@ -78,7 +83,7 @@ function [ startRow, startCol ] = findStartPixelPos(img)
     
     for row = 1 : size(img, 1)
         for col = 1 : size(img, 2) - 1
-            if img(row, col + 1) == 0
+            if isObject(img(row, col + 1))
                 startRow = row;
                 startCol = col + 1;
                 return;
@@ -92,7 +97,7 @@ function [secondPixRow, secondPixCol, fsDir] = findSecondPixelPos(img, firstPixR
     for direction = 5 : 7
         [row, col] = chainPoint(firstPixRow, firstPixCol, direction);
         
-        if img(row, col) == 0
+        if isObject(img(row, col))
             [secondPixRow, secondPixCol] = chainPoint(firstPixRow, firstPixCol, direction - 1);
             fsDir = direction;
             return;
@@ -148,4 +153,12 @@ end
 
 function [ invertedDir ] = invertDir(dir)
     invertedDir = mod(dir + 4, 8);
+end
+
+function [ isBckg ] = isBackground(pixelValue)
+    isBckg = (pixelValue == 255);
+end
+
+function [ isBckg ] = isObject(pixelValue)
+    isBckg = (pixelValue == 0);
 end
