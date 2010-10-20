@@ -5,6 +5,7 @@ function [ newX, newY ] = smoothBorder(X, Y, sigmaFactor)
     % Get the frequency signal of the border.
     F = extractBorderFreqSignal(X, Y);
     F = fftshift(F);
+    originalSum = sum(abs(F));
     
     % Multiply the frequency signal by a gaussian of std. deviation of 'sigma'.
     K = - (floor(size(X)/2) - 1) : floor(size(X)/2);
@@ -16,6 +17,11 @@ function [ newX, newY ] = smoothBorder(X, Y, sigmaFactor)
     
     % Use the IFFT to get the smoothed border.
     F = ifftshift(F .* filter);
+    filteredSum = sum(abs(F));
+    
+    energyConservationFactor = originalSum / filteredSum;
+    
+    F = energyConservationFactor .* F;
     
     S = ifft(F);
     newX = real(S);
