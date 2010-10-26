@@ -11,7 +11,7 @@ function  outputimage= MaxSupr(Mag,Ang)
 	for x=2:columns-1
       for y=2:rows-1
          if Mag(y,x)>0
-						t=Ang(y,x);   %angle of edge
+				t=Ang(y,x);   %angle of edge
          		if (t<.57 & t>-.57)
          		  if (Mag(y,x)>=Mag(y+1,x) & Mag(y,x)>Mag(y-1,x))
          		   		outputimage(y,x)=Mag(y,x);
