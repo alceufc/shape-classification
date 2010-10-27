@@ -11,9 +11,12 @@ function k = curvature()
 img = imread('C:\Users\frizzi\Desktop\bg1.tif');
 [x,y] = extractBorder(img);
 
+plot(x,y);
+
 % first derivative
 sigma = 10;
-t = 1:size(x); % ?
+t = 1:size(x);
+
 dx = derivative(sigma,x,t);
 dy = derivative(sigma,y,t);
 
@@ -23,7 +26,18 @@ d2y = derivative(sigma,dy,t);
 
 % Calculating the curvature k
 k = ( dx.*d2y - dy.*d2x )./( dx.^2 + dy.^2 ).^(3/2);
-plot(k);
+figure, plot(k);
+
+med = mean(k);
+dst = std(k);
+ 
+%k2 = k > (med + (2*dst));
+k2 = k > (med + 1/2*dst);
+figure, plot(k2);
+A = find(k2);
+npicos = size(A);
+
+
 
 
 

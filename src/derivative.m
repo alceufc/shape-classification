@@ -10,14 +10,14 @@ ts = ( x(1,N) - x(1,1) )/N;
 df = 1.0/(ts*N);
 N2 = floor(N/2);
 N1 = N - 1;
-s = -N2:(N1-N2); % center to origen
+s = -N2:(N1-N2);
 X = s*df;
 
-% Filter function Gaussian
-GAU = exp(-((X.^2)/(sigma^2))/2); % mascara
+% Filter function (Gaussian)
+GAU = exp(-((X.^2)/(sigma^2))/2);
 GAU = fftshift(GAU);
 
-% Inverse transform the filtered transformed
+% Inverse transform
 A = ( GAU'.*Y );
 
 % Derivative Function
