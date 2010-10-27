@@ -7,6 +7,7 @@ function k = curvature()
 %         (dx^2 + dy^2)^3/2     %
 %                               %
 % % % % % % % % % % % % % % % % %
+
 img = imread('C:\Users\frizzi\Desktop\bg1.tif');
 [x,y] = extractBorder(img);
 
