@@ -8,7 +8,7 @@ function [ newX, newY ] = smoothBorder(X, Y, sigmaFactor)
     originalSum = sum(abs(F));
     
     % Multiply the frequency signal by a gaussian of std. deviation of 'sigma'.
-    K = - (floor(size(X)/2) - 1) : floor(size(X)/2);
+    K = - (floor(size(X)/2) - 1) : ceil(size(X)/2);
     K = K';
     
     sigma = size(X, 1) * sigmaFactor;
