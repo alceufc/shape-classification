@@ -1,4 +1,5 @@
-function [   ] = generateLeavesArffFile( outputFileName )
+function [   ] = generateLeavesArffFile(  )
+    outputFileName = 'text.txt';
     fid = fopen(outputFileName, 'w');
     writeArffHeader(fid);
     fclose(fid);
