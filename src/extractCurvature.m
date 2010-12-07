@@ -1,4 +1,4 @@
-function k = curvature(X, Y)
+function [ K ] = extractCurvature(X, Y)
 
 % % % Curvature % % % % % % % % 
 %                               
@@ -8,19 +8,16 @@ function k = curvature(X, Y)
 %                               
 % % % % % % % % % % % % % % % % 
 
+dx = diff(X);
+d2x = diff(dx);
+dx = dx(1 : size(d2x, 1));
 
-% first derivative
-sigma = 0.2;
-t = 1:size(X);
+dy = diff(Y);
+d2y = diff(dy);
+dy = dy(1 : size(d2y, 1));
 
-dx = derivative(sigma,X,t);
-dy = derivative(sigma,Y,t);
-
-% second derivative
-d2x = derivative(sigma,dx,t);
-d2y = derivative(sigma,dy,t);
+% Resize dx and dy so that the number of elements is the same as for d2x and d2y.
 
 % Calculating the curvature k
-k = ( dx.*d2y - dy.*d2x )./( dx.^2 + dy.^2 ).^(3/2);
-
+K = ( dx .* d2y - dy .* d2x )./( dx.^2 + dy.^2 ).^(3/2);
 end

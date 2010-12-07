@@ -6,6 +6,13 @@ function [ descriptors ] = extractDescriptorsFromImg( imgFileName )
     
     img = preprocessInputImage(img);
     [X,Y] = extractBorder(img);
-    descriptors = extractFourierDescriptors(X, Y);
+    area = getArea(img);
+    diameter = getDiameter(X, Y);
+    perimeter = getPerimeter(X, Y);
+    bendingEnergy = getBendingEnergy(X, Y);  
+    [centerOfMassX, centerOfMassY] = getCenterOfMass(X, Y);
+    fd = extractFourierDescriptors(X, Y);
+    
+    descriptors = cat(2, area, diameter, perimeter, bendingEnergy, centerOfMassX, centerOfMassY, fd);
 end
 
