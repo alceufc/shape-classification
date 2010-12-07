@@ -1,5 +1,5 @@
 function [ e ] = getBendingEnergy( X, Y )
-    k = extractCurvature(X,Y);
-    e = sum(k.^2);
+    K = extractCurvature(X,Y);
+    e = sum(K.^2);
 end
 

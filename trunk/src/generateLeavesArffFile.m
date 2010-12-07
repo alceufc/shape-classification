@@ -26,6 +26,12 @@ end
 function [] = writeArffHeader(fid)
     fprintf(fid, '@RELATION leaves\n\n');
     
+    fprintf(fid, '@ATTRIBUTE area  NUMERIC\n');
+    fprintf(fid, '@ATTRIBUTE diameter  NUMERIC\n');
+    fprintf(fid, '@ATTRIBUTE perimeter  NUMERIC\n');
+    fprintf(fid, '@ATTRIBUTE bending_energy  NUMERIC\n');
+    fprintf(fid, '@ATTRIBUTE center_of_mass_x  NUMERIC\n');
+    fprintf(fid, '@ATTRIBUTE center_of_mass_y NUMERIC\n');
     fprintf(fid, '@ATTRIBUTE fourier1  NUMERIC\n');
     fprintf(fid, '@ATTRIBUTE fourier2  NUMERIC\n');
     fprintf(fid, '@ATTRIBUTE fourier3  NUMERIC\n');
