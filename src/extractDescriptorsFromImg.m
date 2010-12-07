@@ -15,7 +15,8 @@ function [ descriptors ] = extractDescriptorsFromImg( imgFileName )
     [centerOfMassX, centerOfMassY] = getCenterOfMass(X, Y);
     numberOfPeaks = getNumberPeaks(X, Y);
     fd = extractFourierDescriptors(X, Y);
+    cfd = extractCurvatureFourierDescriptors(X, Y);
     
-    descriptors = cat(2, area, diameter, perimeter, bendingEnergy, centerOfMassX, centerOfMassY, numberOfPeaks, fd);
+    descriptors = cat(2, area, diameter, perimeter, bendingEnergy, centerOfMassX, centerOfMassY, numberOfPeaks, fd, cfd);
 end
 
