@@ -1,17 +1,26 @@
 function [   ] = generateLeavesArffFile(  )
-    outputFileName = 'text.txt';
+    outputFileName = shapeClassPaths.leavesArffFile;
     fid = fopen(outputFileName, 'w');
     writeArffHeader(fid);
-    fclose(fid);
-    return;
+    
 
+    imgClassMap = generateImgClassMap();
+    
     leavesImgFiles = dir(fullfile(shapeClassPaths.leavesImgBase, '*.tif'));
     
     for i = 1 : size(leavesImgFiles)
         imgPath = fullfile(shapeClassPaths.leavesImgBase, leavesImgFiles(i).name);
-        descriptors  = extractDescriptorsFromImg( imgPath );
+        descriptors  = extractDescriptorsFromImg(imgPath);
+        imgClass = imgClassMap.get(leavesImgFiles(i).name);
         
+        
+        for j = 1 : size(descriptors,2)
+            fprintf(fid, '%f, ', descriptors(j));
+        end;
+        fprintf(fid, '%s\n', imgClass);
     end;
+    
+    fclose(fid);
 end
 
 function [] = writeArffHeader(fid)
@@ -39,5 +48,7 @@ function [] = writeArffHeader(fid)
     fprintf(fid, '@ATTRIBUTE fourier20  NUMERIC\n');
     fprintf(fid, '@ATTRIBUTE fourier21  NUMERIC\n\n');
     
-    fprintf(fid, '@ATTRIBUTE class  {ag, bg, cg, lg, me, pe}\n');
+    fprintf(fid, '@ATTRIBUTE class  {ag, bg, cg, lg, me, pe}\n\n');
+    fprintf(fid, '@DATA\n');
+    
 end
