@@ -1,0 +1,1698 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     leaves
+Instances:    62
+Attributes:   50
+              area
+              diameter
+              perimeter
+              bending_energy
+              center_of_mass_x
+              center_of_mass_y
+              number_of_peaks
+              fourier1
+              fourier2
+              fourier3
+              fourier4
+              fourier5
+              fourier6
+              fourier7
+              fourier8
+              fourier9
+              fourier10
+              fourier11
+              fourier12
+              fourier13
+              fourier14
+              fourier15
+              fourier16
+              fourier17
+              fourier18
+              fourier19
+              fourier20
+              fourier21
+              curve_fourier1
+              curve_fourier2
+              curve_fourier3
+              curve_fourier4
+              curve_fourier5
+              curve_fourier6
+              curve_fourier7
+              curve_fourier8
+              curve_fourier9
+              curve_fourier10
+              curve_fourier11
+              curve_fourier12
+              curve_fourier13
+              curve_fourier14
+              curve_fourier15
+              curve_fourier16
+              curve_fourier17
+              curve_fourier18
+              curve_fourier19
+              curve_fourier20
+              curve_fourier21
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -0.4090771037060638
+    Node 6    -1.9080777090134564
+    Node 7    -1.8375234160610094
+    Node 8    1.165063769046735
+    Node 9    1.2147565980395187
+    Node 10    -0.260693582297783
+    Node 11    -2.685701790788872
+    Node 12    -1.1894192634345817
+    Node 13    -0.4118771508412742
+    Node 14    -2.2906005759303305
+    Node 15    1.0205057412391478
+    Node 16    0.934307567081811
+    Node 17    1.3370370432541598
+    Node 18    -1.810314204910975
+    Node 19    -1.8816644119274104
+    Node 20    1.2568942701881984
+    Node 21    0.38046198139536025
+    Node 22    1.075069620827186
+    Node 23    0.7806995822134067
+    Node 24    -2.340990824520296
+    Node 25    -1.855814114395156
+    Node 26    -1.2543186470548333
+    Node 27    -2.834933042767231
+    Node 28    0.9317308979325395
+    Node 29    -0.6674538109691537
+    Node 30    -0.01760758219640881
+    Node 31    0.027193209396056125
+    Node 32    0.9877913266280828
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -0.9878121215647315
+    Node 6    -2.5311009897022143
+    Node 7    -1.1598396172206118
+    Node 8    1.319269871694145
+    Node 9    -1.0819646597722734
+    Node 10    -1.268204779443223
+    Node 11    1.2172342986146913
+    Node 12    0.9958767082894243
+    Node 13    -1.001069240856938
+    Node 14    2.048139089823185
+    Node 15    -3.0816523418372905
+    Node 16    -1.4009523194300255
+    Node 17    -1.8002490998891447
+    Node 18    -1.27117614740552
+    Node 19    -0.41230140156821343
+    Node 20    -1.5817276311831356
+    Node 21    -0.9389712306793226
+    Node 22    -1.289700675399526
+    Node 23    1.409525591403052
+    Node 24    0.5664857707612597
+    Node 25    1.7549381507714819
+    Node 26    -2.004411543814112
+    Node 27    -2.521755207072641
+    Node 28    -1.1394395803706008
+    Node 29    3.0644892584855805
+    Node 30    -1.1252076240458517
+    Node 31    1.4191727740119255
+    Node 32    -1.414192694916685
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    1.1960660714441849
+    Node 6    2.2838062083247728
+    Node 7    -1.4816082862314075
+    Node 8    -1.6771562110941953
+    Node 9    -2.7223215195372816
+    Node 10    -0.6486401781551753
+    Node 11    -1.6809825187527274
+    Node 12    -1.5886243367878021
+    Node 13    -0.7534005770803238
+    Node 14    -0.36621602776603035
+    Node 15    -0.3117230329714129
+    Node 16    -0.925435274687015
+    Node 17    0.6828110786324573
+    Node 18    -1.8040250921892285
+    Node 19    0.15795046051240602
+    Node 20    0.14330128861729038
+    Node 21    -3.1799163876757244
+    Node 22    0.8049523308217775
+    Node 23    -1.8886313423125223
+    Node 24    -1.4289763329602614
+    Node 25    -1.8069389973603607
+    Node 26    0.2516291481562218
+    Node 27    2.9567028742116377
+    Node 28    0.6321965600763401
+    Node 29    0.002672278715988627
+    Node 30    -2.373863109268962
+    Node 31    -0.8493581752507356
+    Node 32    0.15060776213389715
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -1.167987583028087
+    Node 6    -1.4025226702718074
+    Node 7    -0.08834046876136854
+    Node 8    1.448745092543234
+    Node 9    -1.6897595405183397
+    Node 10    0.5024444894581604
+    Node 11    0.43630124231564005
+    Node 12    -0.021107252153910835
+    Node 13    0.8754106286066708
+    Node 14    -2.6187989808560457
+    Node 15    1.527909478724024
+    Node 16    -0.9655431735830176
+    Node 17    0.5438193951047204
+    Node 18    -1.1247775018652388
+    Node 19    -1.0202057502380055
+    Node 20    -1.1921315394141672
+    Node 21    -1.7528895922981838
+    Node 22    0.7909856204621645
+    Node 23    0.9852264440345503
+    Node 24    -0.08528735933618897
+    Node 25    0.7210238534340757
+    Node 26    0.6571823170377142
+    Node 27    -1.4736118225681933
+    Node 28    -1.315310000146846
+    Node 29    -2.8404925925426356
+    Node 30    -1.5466700551564274
+    Node 31    -1.8233725312733466
+    Node 32    -0.7791634484015574
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -1.6774216956258743
+    Node 6    -0.08705981145894165
+    Node 7    -1.5554376592422732
+    Node 8    -2.765387263573261
+    Node 9    1.6415216163422788
+    Node 10    -1.3764804624340174
+    Node 11    -1.8827667867517772
+    Node 12    -1.2189599848358112
+    Node 13    -1.4800381074514435
+    Node 14    0.2959425607948251
+    Node 15    -3.027849838517702
+    Node 16    0.25354203667416814
+    Node 17    -1.4394562244734201
+    Node 18    1.3346914394463447
+    Node 19    -2.7414702405710707
+    Node 20    0.12425484556123871
+    Node 21    1.9869066460335385
+    Node 22    0.12060803466812318
+    Node 23    -2.423998456991923
+    Node 24    -1.620383340807824
+    Node 25    -1.8498235371632485
+    Node 26    -2.909342745110846
+    Node 27    0.8176641702088417
+    Node 28    0.40425296220298096
+    Node 29    2.1433278463045373
+    Node 30    1.9189676376050102
+    Node 31    1.3326400217682566
+    Node 32    -0.691616219627312
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -1.3037943973708437
+    Node 6    1.8653797015868712
+    Node 7    2.044074939340084
+    Node 8    -1.1479852185913422
+    Node 9    0.5608524594188175
+    Node 10    -0.49456266215065237
+    Node 11    2.0861165172082603
+    Node 12    0.18136143092796808
+    Node 13    -0.6217231275515422
+    Node 14    -0.8513054920747495
+    Node 15    0.6926517167479795
+    Node 16    0.37294840896244263
+    Node 17    -2.096803636234368
+    Node 18    1.6760396260262824
+    Node 19    2.4520374741990123
+    Node 20    -1.3529552710275383
+    Node 21    0.7232502225522258
+    Node 22    -3.333676960828841
+    Node 23    -1.2279588448932297
+    Node 24    1.4107384882659673
+    Node 25    -0.4227993098054624
+    Node 26    1.4897508850152368
+    Node 27    0.7910350402263898
+    Node 28    -2.1822052692261353
+    Node 29    -4.251235298874642
+    Node 30    0.5265899530027898
+    Node 31    -2.9904834955023687
+    Node 32    -0.5447134219956872
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    0.16698612196553456
+    Attrib area    -2.4985561336785818
+    Attrib diameter    1.3141781110135362
+    Attrib perimeter    -0.36331061544846177
+    Attrib bending_energy    0.2609874483064883
+    Attrib center_of_mass_x    4.6720424353061025
+    Attrib center_of_mass_y    3.967289368958272
+    Attrib number_of_peaks    0.3092961350423394
+    Attrib fourier1    0.12166966944053424
+    Attrib fourier2    1.1200882982001348
+    Attrib fourier3    0.0019027388403585015
+    Attrib fourier4    0.1455076068078991
+    Attrib fourier5    0.670093730765329
+    Attrib fourier6    -1.794222006609447
+    Attrib fourier7    0.16608222510597004
+    Attrib fourier8    -1.3314543282814657
+    Attrib fourier9    -1.3401413375604325
+    Attrib fourier10    1.5477282196406168
+    Attrib fourier11    0.2187537928380186
+    Attrib fourier12    0.3728991348233192
+    Attrib fourier13    -0.9793988551455417
+    Attrib fourier14    -1.571848696511315
+    Attrib fourier15    0.28543285442272964
+    Attrib fourier16    0.1933385360480646
+    Attrib fourier17    0.43932652627350083
+    Attrib fourier18    0.6232631576215063
+    Attrib fourier19    0.32229189686627013
+    Attrib fourier20    1.0629714562939314
+    Attrib fourier21    1.9260162191392287
+    Attrib curve_fourier1    -0.9366709533021764
+    Attrib curve_fourier2    0.7561446611918876
+    Attrib curve_fourier3    -0.0753701522300773
+    Attrib curve_fourier4    -0.1739684871223047
+    Attrib curve_fourier5    0.08760966331421645
+    Attrib curve_fourier6    -0.8561009135680857
+    Attrib curve_fourier7    0.03993216048193208
+    Attrib curve_fourier8    -0.8536517221637555
+    Attrib curve_fourier9    -1.6200815443676029
+    Attrib curve_fourier10    -1.49763564278435
+    Attrib curve_fourier11    3.3067195766187476
+    Attrib curve_fourier12    -1.6703442394585872
+    Attrib curve_fourier13    -1.3216920010145459
+    Attrib curve_fourier14    -1.3530361962534756
+    Attrib curve_fourier15    -0.13891744405568401
+    Attrib curve_fourier16    -0.31426557181971365
+    Attrib curve_fourier17    0.02504767434290728
+    Attrib curve_fourier18    0.06835370586418149
+    Attrib curve_fourier19    0.0014211272474095658
+    Attrib curve_fourier20    -0.0664472778417669
+    Attrib curve_fourier21    -0.23494608439948622
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    -0.36245103276820795
+    Attrib area    -0.019576480515739444
+    Attrib diameter    -0.5822194147648941
+    Attrib perimeter    0.1551002766751903
+    Attrib bending_energy    0.5419127626841187
+    Attrib center_of_mass_x    0.960715362802886
+    Attrib center_of_mass_y    -0.7445036423716801
+    Attrib number_of_peaks    -0.138754924837468
+    Attrib fourier1    0.00614307799723212
+    Attrib fourier2    0.05985134906548386
+    Attrib fourier3    0.30206345159907555
+    Attrib fourier4    0.11466000625539707
+    Attrib fourier5    0.7227255820798324
+    Attrib fourier6    0.29342095694489967
+    Attrib fourier7    0.31026319096338095
+    Attrib fourier8    0.1333491123297425
+    Attrib fourier9    0.34624641562948133
+    Attrib fourier10    0.7285419051295554
+    Attrib fourier11    0.1561846715158853
+    Attrib fourier12    0.8248278800508548
+    Attrib fourier13    0.12435491760525014
+    Attrib fourier14    -0.00941168130430363
+    Attrib fourier15    0.23494159260295194
+    Attrib fourier16    0.37965983386079566
+    Attrib fourier17    0.5465878483637495
+    Attrib fourier18    0.23177318669891028
+    Attrib fourier19    0.1973960105100583
+    Attrib fourier20    0.07103967558339119
+    Attrib fourier21    0.006933862330249919
+    Attrib curve_fourier1    0.27084744711438735
+    Attrib curve_fourier2    0.3363448740492565
+    Attrib curve_fourier3    0.2563041871444762
+    Attrib curve_fourier4    -0.10209113572498024
+    Attrib curve_fourier5    0.564338653170865
+    Attrib curve_fourier6    0.036993516372715016
+    Attrib curve_fourier7    0.18547735133951018
+    Attrib curve_fourier8    0.03135060562677065
+    Attrib curve_fourier9    0.11562789617200699
+    Attrib curve_fourier10    0.7890342744641684
+    Attrib curve_fourier11    0.8774077286872294
+    Attrib curve_fourier12    0.8053557306701707
+    Attrib curve_fourier13    0.14618796051706132
+    Attrib curve_fourier14    0.004317170172974448
+    Attrib curve_fourier15    0.1678614168637849
+    Attrib curve_fourier16    0.17565947972952706
+    Attrib curve_fourier17    0.3872414689415964
+    Attrib curve_fourier18    0.01911990027135675
+    Attrib curve_fourier19    0.26638561337039934
+    Attrib curve_fourier20    0.3527015221747204
+    Attrib curve_fourier21    0.39037779543888884
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    0.021974197923064737
+    Attrib area    0.6977661845497343
+    Attrib diameter    -1.0464111059837045
+    Attrib perimeter    0.16053786461247346
+    Attrib bending_energy    -0.06919074910522777
+    Attrib center_of_mass_x    -2.1200465049525063
+    Attrib center_of_mass_y    -2.579664924058048
+    Attrib number_of_peaks    -0.21369943327011884
+    Attrib fourier1    -0.20545100689303394
+    Attrib fourier2    -0.9052071925149707
+    Attrib fourier3    -0.195536365928099
+    Attrib fourier4    -0.45982764644826046
+    Attrib fourier5    -0.45494073219169656
+    Attrib fourier6    1.3197724380560978
+    Attrib fourier7    -0.11842305049867213
+    Attrib fourier8    1.0385448274936215
+    Attrib fourier9    1.1909946720569373
+    Attrib fourier10    -0.7783938910733864
+    Attrib fourier11    -0.3321508468044256
+    Attrib fourier12    -0.0012195152443091153
+    Attrib fourier13    0.8259637368754575
+    Attrib fourier14    1.244436472921427
+    Attrib fourier15    -0.2635688844286525
+    Attrib fourier16    -0.07814845035931918
+    Attrib fourier17    -0.3679874320501796
+    Attrib fourier18    -0.6451847593138251
+    Attrib fourier19    -0.4914916619257956
+    Attrib fourier20    -0.8278839539431401
+    Attrib fourier21    -1.4196490143129166
+    Attrib curve_fourier1    0.6268647717922949
+    Attrib curve_fourier2    -0.3973360213248062
+    Attrib curve_fourier3    -0.1246149557679163
+    Attrib curve_fourier4    -0.32845859056675514
+    Attrib curve_fourier5    -0.10539959804826658
+    Attrib curve_fourier6    0.5667547466559073
+    Attrib curve_fourier7    -0.10054136311917371
+    Attrib curve_fourier8    0.9870483517328782
+    Attrib curve_fourier9    1.2711177637580666
+    Attrib curve_fourier10    1.3609568079553476
+    Attrib curve_fourier11    -2.091276253958016
+    Attrib curve_fourier12    1.53115201919168
+    Attrib curve_fourier13    1.0348248948089491
+    Attrib curve_fourier14    1.1947539404106398
+    Attrib curve_fourier15    0.022120545242494096
+    Attrib curve_fourier16    0.23940515898498155
+    Attrib curve_fourier17    -0.04878870440827286
+    Attrib curve_fourier18    -0.35272901464227135
+    Attrib curve_fourier19    -0.1412093686244977
+    Attrib curve_fourier20    0.10640987754444908
+    Attrib curve_fourier21    0.3541331546096888
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    1.654957671048976
+    Attrib area    -0.2518176145591042
+    Attrib diameter    0.804825126651053
+    Attrib perimeter    0.8144233148082983
+    Attrib bending_energy    -0.034745395612144576
+    Attrib center_of_mass_x    0.32083233162838176
+    Attrib center_of_mass_y    0.6222608535223652
+    Attrib number_of_peaks    0.9359937415501358
+    Attrib fourier1    0.01880830199276791
+    Attrib fourier2    0.597253052796263
+    Attrib fourier3    -0.008129165639769639
+    Attrib fourier4    -0.12155162941674348
+    Attrib fourier5    0.48512662175640986
+    Attrib fourier6    0.4677036272887847
+    Attrib fourier7    0.029057838189015705
+    Attrib fourier8    0.04730421941477314
+    Attrib fourier9    0.18572162450641266
+    Attrib fourier10    0.06204946430031932
+    Attrib fourier11    0.3025057888343305
+    Attrib fourier12    -0.1449724750824803
+    Attrib fourier13    -0.008444114621789678
+    Attrib fourier14    0.21262900454938727
+    Attrib fourier15    0.08020382074753678
+    Attrib fourier16    0.4033822105399308
+    Attrib fourier17    0.3361678087236802
+    Attrib fourier18    -0.22493237431638521
+    Attrib fourier19    0.03983352290664652
+    Attrib fourier20    0.5025731624350308
+    Attrib fourier21    -0.05562131566580827
+    Attrib curve_fourier1    -0.23880826783391002
+    Attrib curve_fourier2    0.3064057999185505
+    Attrib curve_fourier3    -5.026199040772968E-5
+    Attrib curve_fourier4    -0.21226225064013954
+    Attrib curve_fourier5    0.29812904653010425
+    Attrib curve_fourier6    0.4707591720018977
+    Attrib curve_fourier7    0.07498093761418764
+    Attrib curve_fourier8    0.09142626335452876
+    Attrib curve_fourier9    0.011297489863802189
+    Attrib curve_fourier10    -0.12769140412623659
+    Attrib curve_fourier11    0.395591343830584
+    Attrib curve_fourier12    -0.0571065773800122
+    Attrib curve_fourier13    -0.03462885301221044
+    Attrib curve_fourier14    0.06642784802761428
+    Attrib curve_fourier15    0.12976826532420413
+    Attrib curve_fourier16    0.3975396533291696
+    Attrib curve_fourier17    0.3893495632980621
+    Attrib curve_fourier18    -0.2880684560243912
+    Attrib curve_fourier19    0.018331291376196608
+    Attrib curve_fourier20    0.351770988108185
+    Attrib curve_fourier21    -0.15267639865844185
+Sigmoid Node 10
+    Inputs    Weights
+    Threshold    -0.16856699758780272
+    Attrib area    -0.924014644933544
+    Attrib diameter    -0.19661446035215624
+    Attrib perimeter    -0.20507785376876508
+    Attrib bending_energy    0.5814165317615311
+    Attrib center_of_mass_x    0.8622411440858418
+    Attrib center_of_mass_y    0.30296417709746043
+    Attrib number_of_peaks    -0.21870495273912452
+    Attrib fourier1    -0.1873679998239903
+    Attrib fourier2    0.008976218919489546
+    Attrib fourier3    -0.24302347450374454
+    Attrib fourier4    -0.20002070003869526
+    Attrib fourier5    -0.23917208728976916
+    Attrib fourier6    0.021971961383303144
+    Attrib fourier7    -0.05686092142960118
+    Attrib fourier8    0.11468976840418917
+    Attrib fourier9    0.5865732100855839
+    Attrib fourier10    0.7710201290205732
+    Attrib fourier11    -0.1589999522181788
+    Attrib fourier12    0.3091162489492483
+    Attrib fourier13    0.10016386320418609
+    Attrib fourier14    -0.028237681710003425
+    Attrib fourier15    -0.14353224094376316
+    Attrib fourier16    -0.04178546668268092
+    Attrib fourier17    -0.21222987338001248
+    Attrib fourier18    -0.12592348693975022
+    Attrib fourier19    -0.24993746350605528
+    Attrib fourier20    -0.041154318800495276
+    Attrib fourier21    -0.10724032005732764
+    Attrib curve_fourier1    0.17157411388127744
+    Attrib curve_fourier2    0.29619374715792407
+    Attrib curve_fourier3    -0.13933628054097116
+    Attrib curve_fourier4    -0.2538053521983104
+    Attrib curve_fourier5    -0.2088534749131404
+    Attrib curve_fourier6    0.005385179373516034
+    Attrib curve_fourier7    -0.12867536492154716
+    Attrib curve_fourier8    0.3376499631411465
+    Attrib curve_fourier9    0.2647515452005017
+    Attrib curve_fourier10    0.680248954006147
+    Attrib curve_fourier11    0.3805265575433159
+    Attrib curve_fourier12    0.6847482213882996
+    Attrib curve_fourier13    0.2722461738696606
+    Attrib curve_fourier14    0.164669285412216
+    Attrib curve_fourier15    -0.035379082197819586
+    Attrib curve_fourier16    -0.04595309299341312
+    Attrib curve_fourier17    -0.16840329536101067
+    Attrib curve_fourier18    -0.18119098104023612
+    Attrib curve_fourier19    -0.1153364200938142
+    Attrib curve_fourier20    0.2542370982273834
+    Attrib curve_fourier21    0.22847189338247495
+Sigmoid Node 11
+    Inputs    Weights
+    Threshold    -1.3163363984118936
+    Attrib area    1.4646904835726389
+    Attrib diameter    -1.805006007740633
+    Attrib perimeter    0.39144526711929356
+    Attrib bending_energy    -1.339652151178446
+    Attrib center_of_mass_x    -0.11049635780791132
+    Attrib center_of_mass_y    -4.258641847076835
+    Attrib number_of_peaks    0.7194478100719014
+    Attrib fourier1    0.5744084386130157
+    Attrib fourier2    -0.8497021364834272
+    Attrib fourier3    0.2821335545919373
+    Attrib fourier4    -0.659996751572785
+    Attrib fourier5    -0.001600886605874457
+    Attrib fourier6    0.6995460100071125
+    Attrib fourier7    -0.15866374635552277
+    Attrib fourier8    0.10144289510587784
+    Attrib fourier9    0.1398281658940878
+    Attrib fourier10    -0.3544082815330223
+    Attrib fourier11    -0.051138492537453326
+    Attrib fourier12    0.9977681008716757
+    Attrib fourier13    -0.12051365635014863
+    Attrib fourier14    0.5593895686767107
+    Attrib fourier15    -0.3916759341195932
+    Attrib fourier16    0.18367545510985472
+    Attrib fourier17    -0.36083147058171144
+    Attrib fourier18    -0.6890776210530698
+    Attrib fourier19    -0.08550258123191021
+    Attrib fourier20    -0.6322091244314353
+    Attrib fourier21    -0.7277322170918832
+    Attrib curve_fourier1    0.961066604134159
+    Attrib curve_fourier2    -0.23537433963353405
+    Attrib curve_fourier3    -0.0963814333985165
+    Attrib curve_fourier4    -0.6184890033566877
+    Attrib curve_fourier5    0.12943923558639972
+    Attrib curve_fourier6    -0.14460388434488214
+    Attrib curve_fourier7    -0.18513539288353845
+    Attrib curve_fourier8    0.0025840404173018104
+    Attrib curve_fourier9    0.4028938367768115
+    Attrib curve_fourier10    1.893210062841802
+    Attrib curve_fourier11    -0.9207350212588847
+    Attrib curve_fourier12    1.9077480034121796
+    Attrib curve_fourier13    -0.05762885230853713
+    Attrib curve_fourier14    0.293300189235868
+    Attrib curve_fourier15    -0.21115131626522776
+    Attrib curve_fourier16    0.21018950532042774
+    Attrib curve_fourier17    -0.5010925378267383
+    Attrib curve_fourier18    -0.5116014002273098
+    Attrib curve_fourier19    -0.2072380470033428
+    Attrib curve_fourier20    0.35316462796350306
+    Attrib curve_fourier21    0.3937049231015487
+Sigmoid Node 12
+    Inputs    Weights
+    Threshold    -0.6252387743420456
+    Attrib area    1.5417730508884355
+    Attrib diameter    -1.2322766912634247
+    Attrib perimeter    0.3776394581522428
+    Attrib bending_energy    -0.5865166079827858
+    Attrib center_of_mass_x    -0.5527706680771914
+    Attrib center_of_mass_y    -2.9110496665027163
+    Attrib number_of_peaks    0.42856531884187704
+    Attrib fourier1    0.116849570572833
+    Attrib fourier2    -0.654547529339822
+    Attrib fourier3    0.11535079336929917
+    Attrib fourier4    -0.4685742291823107
+    Attrib fourier5    -0.11460784126899154
+    Attrib fourier6    0.8858884213170005
+    Attrib fourier7    0.07340182524214885
+    Attrib fourier8    0.20460497354786694
+    Attrib fourier9    0.2895418531046632
+    Attrib fourier10    -1.0092019509907466
+    Attrib fourier11    -0.0782426461332873
+    Attrib fourier12    0.16621570757385015
+    Attrib fourier13    0.08143782010863325
+    Attrib fourier14    0.38559031906677615
+    Attrib fourier15    -0.14722857752582585
+    Attrib fourier16    0.3598279742655232
+    Attrib fourier17    -0.26163273352394834
+    Attrib fourier18    -0.4823295307064059
+    Attrib fourier19    -0.11305676049671905
+    Attrib fourier20    -0.45472919831329817
+    Attrib fourier21    -0.7445567679227514
+    Attrib curve_fourier1    0.5808880354844462
+    Attrib curve_fourier2    -0.17688433742146986
+    Attrib curve_fourier3    -0.0069310474181460005
+    Attrib curve_fourier4    -0.3904238656002596
+    Attrib curve_fourier5    0.07167514763910939
+    Attrib curve_fourier6    0.19893358393413405
+    Attrib curve_fourier7    0.010336894192746566
+    Attrib curve_fourier8    0.015605656093415856
+    Attrib curve_fourier9    0.5449308526527838
+    Attrib curve_fourier10    1.0184015544292504
+    Attrib curve_fourier11    -1.217594080432399
+    Attrib curve_fourier12    1.1729269033289291
+    Attrib curve_fourier13    0.26096368500095624
+    Attrib curve_fourier14    0.24613081483121815
+    Attrib curve_fourier15    0.03742341838958205
+    Attrib curve_fourier16    0.4339977874139828
+    Attrib curve_fourier17    -0.3529913983721972
+    Attrib curve_fourier18    -0.30956333443875106
+    Attrib curve_fourier19    -0.1426477023605085
+    Attrib curve_fourier20    0.2677374841219114
+    Attrib curve_fourier21    0.26983382730874134
+Sigmoid Node 13
+    Inputs    Weights
+    Threshold    -0.3068238131159886
+    Attrib area    -0.6810801531760662
+    Attrib diameter    -0.338813495648806
+    Attrib perimeter    -0.2885151760319544
+    Attrib bending_energy    0.639141496012249
+    Attrib center_of_mass_x    0.44748354945859176
+    Attrib center_of_mass_y    -0.09263101735036525
+    Attrib number_of_peaks    -0.2374404004466333
+    Attrib fourier1    -0.13077390224746044
+    Attrib fourier2    -0.12319118423843142
+    Attrib fourier3    -0.20980224531983996
+    Attrib fourier4    -0.25320632485868705
+    Attrib fourier5    -0.2586421376861199
+    Attrib fourier6    0.15361495782631815
+    Attrib fourier7    -0.03456893509929872
+    Attrib fourier8    0.1580505199110203
+    Attrib fourier9    0.6415412087458181
+    Attrib fourier10    0.6659911963995824
+    Attrib fourier11    -0.14185593513000025
+    Attrib fourier12    0.3738063362491232
+    Attrib fourier13    0.09821039706129939
+    Attrib fourier14    0.013016655205879201
+    Attrib fourier15    -0.13619548003930687
+    Attrib fourier16    0.024438769822601885
+    Attrib fourier17    -0.30518998300474276
+    Attrib fourier18    -0.1524923882442149
+    Attrib fourier19    -0.25588748486038776
+    Attrib fourier20    -0.16223952651446213
+    Attrib fourier21    -0.18129273531720433
+    Attrib curve_fourier1    0.34647843137174883
+    Attrib curve_fourier2    0.26795582276638086
+    Attrib curve_fourier3    -0.09939777968677241
+    Attrib curve_fourier4    -0.19794912409535523
+    Attrib curve_fourier5    -0.20736374299321897
+    Attrib curve_fourier6    0.15259856919790812
+    Attrib curve_fourier7    -0.048392715013893535
+    Attrib curve_fourier8    0.320040806081338
+    Attrib curve_fourier9    0.390703596724811
+    Attrib curve_fourier10    0.7913703649011053
+    Attrib curve_fourier11    0.17170782599767156
+    Attrib curve_fourier12    0.8974168853718575
+    Attrib curve_fourier13    0.370515729838128
+    Attrib curve_fourier14    0.19490904035062537
+    Attrib curve_fourier15    0.011582949994775087
+    Attrib curve_fourier16    0.04044196200079579
+    Attrib curve_fourier17    -0.25680990606097437
+    Attrib curve_fourier18    -0.2038253992158273
+    Attrib curve_fourier19    -0.07044553133423287
+    Attrib curve_fourier20    0.31579980014597236
+    Attrib curve_fourier21    0.2518867957024676
+Sigmoid Node 14
+    Inputs    Weights
+    Threshold    -0.4668782841971741
+    Attrib area    2.63410958450382
+    Attrib diameter    0.025249385557948943
+    Attrib perimeter    0.2794023531711955
+    Attrib bending_energy    -0.5393911976747656
+    Attrib center_of_mass_x    -0.7317395691577392
+    Attrib center_of_mass_y    -0.4948902279039525
+    Attrib number_of_peaks    0.10751376387346298
+    Attrib fourier1    0.16639744215797644
+    Attrib fourier2    -0.06501497071596055
+    Attrib fourier3    0.34273774360376724
+    Attrib fourier4    0.231179792943032
+    Attrib fourier5    0.2975351169040555
+    Attrib fourier6    0.23977230692935037
+    Attrib fourier7    0.4859557862728163
+    Attrib fourier8    -0.41910646035114163
+    Attrib fourier9    -1.0373645586656493
+    Attrib fourier10    -1.8060303576987402
+    Attrib fourier11    0.5211676616635906
+    Attrib fourier12    -0.9416695554815299
+    Attrib fourier13    -0.3514001213060216
+    Attrib fourier14    -0.4382849225018278
+    Attrib fourier15    0.5929437469619069
+    Attrib fourier16    0.613253713642752
+    Attrib fourier17    0.12653450291030963
+    Attrib fourier18    0.14365139715528386
+    Attrib fourier19    0.32833103973713135
+    Attrib fourier20    0.1494104505413399
+    Attrib fourier21    0.19277061809942347
+    Attrib curve_fourier1    -0.19922983923202822
+    Attrib curve_fourier2    -0.21221506652725666
+    Attrib curve_fourier3    0.20095780634035687
+    Attrib curve_fourier4    0.37093547176890235
+    Attrib curve_fourier5    0.2802065686671142
+    Attrib curve_fourier6    0.15995566001100164
+    Attrib curve_fourier7    0.5352130487646335
+    Attrib curve_fourier8    -0.7324954847865712
+    Attrib curve_fourier9    -0.4586321596357688
+    Attrib curve_fourier10    -1.1588921289680774
+    Attrib curve_fourier11    -1.0961590016762357
+    Attrib curve_fourier12    -1.0715207396498356
+    Attrib curve_fourier13    -0.29329577405644824
+    Attrib curve_fourier14    -0.5713476451516502
+    Attrib curve_fourier15    0.4363983562331428
+    Attrib curve_fourier16    0.7215104057296747
+    Attrib curve_fourier17    -0.07650865388755937
+    Attrib curve_fourier18    0.24225195308850053
+    Attrib curve_fourier19    -0.03328691581999453
+    Attrib curve_fourier20    -0.027900244730896456
+    Attrib curve_fourier21    -0.5145029938360424
+Sigmoid Node 15
+    Inputs    Weights
+    Threshold    0.27125801758892737
+    Attrib area    -3.138894318537565
+    Attrib diameter    -0.5157028883632805
+    Attrib perimeter    -0.31426665360812006
+    Attrib bending_energy    0.7489830629699475
+    Attrib center_of_mass_x    2.2062656913662764
+    Attrib center_of_mass_y    0.3885119811439878
+    Attrib number_of_peaks    -0.38145072696683024
+    Attrib fourier1    -0.4284451201013076
+    Attrib fourier2    -0.016343451459187943
+    Attrib fourier3    -0.3099429971178304
+    Attrib fourier4    -0.4710533137481541
+    Attrib fourier5    -0.21877627913960018
+    Attrib fourier6    -0.03546113908317333
+    Attrib fourier7    -0.30163503045242546
+    Attrib fourier8    0.3695356312899082
+    Attrib fourier9    1.2935114598546456
+    Attrib fourier10    2.1419436211696374
+    Attrib fourier11    -0.5830428008594151
+    Attrib fourier12    0.7877831214506541
+    Attrib fourier13    0.26091123447744985
+    Attrib fourier14    0.12741679102138115
+    Attrib fourier15    -0.3114374340356917
+    Attrib fourier16    -0.1965553437756684
+    Attrib fourier17    -0.1987279469097477
+    Attrib fourier18    -0.07376021478222024
+    Attrib fourier19    -0.5937066379523283
+    Attrib fourier20    -0.267334034516628
+    Attrib fourier21    -0.43994409723551375
+    Attrib curve_fourier1    0.15850247005485207
+    Attrib curve_fourier2    0.30327649592912637
+    Attrib curve_fourier3    -0.2518799234160877
+    Attrib curve_fourier4    -0.6410661925512561
+    Attrib curve_fourier5    -0.2857040171460808
+    Attrib curve_fourier6    -0.15436971094167737
+    Attrib curve_fourier7    -0.3992097048034805
+    Attrib curve_fourier8    0.8646732276429515
+    Attrib curve_fourier9    0.4159005389744618
+    Attrib curve_fourier10    1.2895882221976473
+    Attrib curve_fourier11    1.5477855418879418
+    Attrib curve_fourier12    1.240846373506334
+    Attrib curve_fourier13    0.39697514804895556
+    Attrib curve_fourier14    0.4511749622309127
+    Attrib curve_fourier15    -0.30496352740059507
+    Attrib curve_fourier16    -0.6057252847331474
+    Attrib curve_fourier17    -0.1838138545580749
+    Attrib curve_fourier18    -0.4854916382710426
+    Attrib curve_fourier19    0.004655935574186258
+    Attrib curve_fourier20    0.06505580461329707
+    Attrib curve_fourier21    0.48776754794455324
+Sigmoid Node 16
+    Inputs    Weights
+    Threshold    0.6364340265715102
+    Attrib area    -0.5871013696889882
+    Attrib diameter    0.4781682231153889
+    Attrib perimeter    0.320509281553523
+    Attrib bending_energy    -0.22246262782282553
+    Attrib center_of_mass_x    0.30415250694305274
+    Attrib center_of_mass_y    0.5049876301255819
+    Attrib number_of_peaks    0.48471147141352156
+    Attrib fourier1    -0.005112347052010606
+    Attrib fourier2    0.16230213347327443
+    Attrib fourier3    -0.09517887664212435
+    Attrib fourier4    -0.09622554111689736
+    Attrib fourier5    0.21458500888603027
+    Attrib fourier6    0.17697611835121466
+    Attrib fourier7    0.11115650198530902
+    Attrib fourier8    0.17938901222148226
+    Attrib fourier9    0.16537953729272742
+    Attrib fourier10    0.0018257225733528306
+    Attrib fourier11    0.15185930202259282
+    Attrib fourier12    -0.07732143057776063
+    Attrib fourier13    0.09161265103318955
+    Attrib fourier14    0.32669740789287344
+    Attrib fourier15    0.06759516069685653
+    Attrib fourier16    0.054664218289507564
+    Attrib fourier17    0.1691069387693586
+    Attrib fourier18    -0.09641240587949024
+    Attrib fourier19    -0.053703675686736896
+    Attrib fourier20    0.2073071883701191
+    Attrib fourier21    -0.1084088252467497
+    Attrib curve_fourier1    -0.26178553498218127
+    Attrib curve_fourier2    0.06073106252085173
+    Attrib curve_fourier3    -0.08331757858621602
+    Attrib curve_fourier4    -0.10526293553931057
+    Attrib curve_fourier5    0.06954237076537642
+    Attrib curve_fourier6    0.1416808008660698
+    Attrib curve_fourier7    0.13678619565318278
+    Attrib curve_fourier8    0.21837881332913392
+    Attrib curve_fourier9    0.05914119280500397
+    Attrib curve_fourier10    -0.16087818101004414
+    Attrib curve_fourier11    0.15598293872384067
+    Attrib curve_fourier12    -0.061214242721305184
+    Attrib curve_fourier13    0.053639630369900125
+    Attrib curve_fourier14    0.21677116422272166
+    Attrib curve_fourier15    0.1259019833059173
+    Attrib curve_fourier16    0.04621174695161975
+    Attrib curve_fourier17    0.16073156775651873
+    Attrib curve_fourier18    -0.11590350571831995
+    Attrib curve_fourier19    0.023134317520773363
+    Attrib curve_fourier20    -0.005021778786947049
+    Attrib curve_fourier21    -0.10164723023980828
+Sigmoid Node 17
+    Inputs    Weights
+    Threshold    -0.3983045979492543
+    Attrib area    -2.065693528927326
+    Attrib diameter    0.4963501403735241
+    Attrib perimeter    -0.9741347143227073
+    Attrib bending_energy    1.3422078759225295
+    Attrib center_of_mass_x    0.7882380182807504
+    Attrib center_of_mass_y    2.4930506640548855
+    Attrib number_of_peaks    -1.2160555599474112
+    Attrib fourier1    -0.4825252498897745
+    Attrib fourier2    0.1735731445636414
+    Attrib fourier3    -0.48185908944927885
+    Attrib fourier4    0.4348463995048852
+    Attrib fourier5    -0.6669754137021847
+    Attrib fourier6    -0.4943785661110403
+    Attrib fourier7    -0.4307922972534142
+    Attrib fourier8    0.37113047140971345
+    Attrib fourier9    0.7223033291383598
+    Attrib fourier10    1.5540909904623357
+    Attrib fourier11    -0.5251669000778153
+    Attrib fourier12    -0.2000169709981664
+    Attrib fourier13    0.24569279877121264
+    Attrib fourier14    -0.20902265830163208
+    Attrib fourier15    -0.36911200594367616
+    Attrib fourier16    -0.5629386031124071
+    Attrib fourier17    -0.20727884875985833
+    Attrib fourier18    0.36836670376735303
+    Attrib fourier19    -0.36430754666181336
+    Attrib fourier20    -0.09739934402298936
+    Attrib fourier21    0.16686976219417873
+    Attrib curve_fourier1    0.006417635831924741
+    Attrib curve_fourier2    0.20784121594029475
+    Attrib curve_fourier3    -0.10057164912531821
+    Attrib curve_fourier4    0.41590813808175936
+    Attrib curve_fourier5    -0.5372866897687726
+    Attrib curve_fourier6    -0.0511877987671978
+    Attrib curve_fourier7    -0.29821526235847473
+    Attrib curve_fourier8    0.6034701237208372
+    Attrib curve_fourier9    0.29782659710693576
+    Attrib curve_fourier10    -0.027652822907968413
+    Attrib curve_fourier11    0.5950963061433902
+    Attrib curve_fourier12    -0.0851701911953213
+    Attrib curve_fourier13    0.5068554175754337
+    Attrib curve_fourier14    0.2878928820475796
+    Attrib curve_fourier15    -0.2527832982780965
+    Attrib curve_fourier16    -0.5543991778395108
+    Attrib curve_fourier17    0.11970319399901448
+    Attrib curve_fourier18    0.30729060390313945
+    Attrib curve_fourier19    0.02893504449967796
+    Attrib curve_fourier20    -0.1821815777945768
+    Attrib curve_fourier21    0.15577495845883557
+Sigmoid Node 18
+    Inputs    Weights
+    Threshold    0.21043418257375854
+    Attrib area    0.38297057815411906
+    Attrib diameter    -0.10649822169448073
+    Attrib perimeter    0.4134704949184774
+    Attrib bending_energy    -0.3372377106543257
+    Attrib center_of_mass_x    1.2167194147697855
+    Attrib center_of_mass_y    -0.3546590505615726
+    Attrib number_of_peaks    0.5628677056241
+    Attrib fourier1    0.2515885242337628
+    Attrib fourier2    0.45686420929401816
+    Attrib fourier3    0.2093983529007642
+    Attrib fourier4    -0.0756131572748426
+    Attrib fourier5    0.49671536733626565
+    Attrib fourier6    -0.0025987878580490537
+    Attrib fourier7    0.08017463179171318
+    Attrib fourier8    -0.3525722946691654
+    Attrib fourier9    -0.33527163437714014
+    Attrib fourier10    0.08669582089087358
+    Attrib fourier11    0.24404862468725844
+    Attrib fourier12    -0.031297261947389673
+    Attrib fourier13    -0.49640878533719246
+    Attrib fourier14    -0.33376028808840713
+    Attrib fourier15    0.02170681271472885
+    Attrib fourier16    0.254923982893393
+    Attrib fourier17    0.3083102047137341
+    Attrib fourier18    -0.08254905268393398
+    Attrib fourier19    0.1373901612822268
+    Attrib fourier20    0.4359579021951596
+    Attrib fourier21    0.15088198011393122
+    Attrib curve_fourier1    0.011489361591771897
+    Attrib curve_fourier2    0.43088138650376623
+    Attrib curve_fourier3    0.12131376046688419
+    Attrib curve_fourier4    -0.2444904083508247
+    Attrib curve_fourier5    0.2896219636805858
+    Attrib curve_fourier6    -0.08022833341904456
+    Attrib curve_fourier7    -0.04275093378225399
+    Attrib curve_fourier8    -0.4835974065377179
+    Attrib curve_fourier9    -0.4909199113764971
+    Attrib curve_fourier10    -0.05033475052087663
+    Attrib curve_fourier11    0.49965503626368063
+    Attrib curve_fourier12    -0.07643135860972473
+    Attrib curve_fourier13    -0.5385429778652655
+    Attrib curve_fourier14    -0.48610162198642676
+    Attrib curve_fourier15    -0.05129023443265659
+    Attrib curve_fourier16    0.18507092377999473
+    Attrib curve_fourier17    0.08636020134159968
+    Attrib curve_fourier18    -0.15050998950006164
+    Attrib curve_fourier19    0.05258992989628116
+    Attrib curve_fourier20    0.4241863102882291
+    Attrib curve_fourier21    -1.465869451818845E-4
+Sigmoid Node 19
+    Inputs    Weights
+    Threshold    -0.49876528554244587
+    Attrib area    -1.2137804911839736
+    Attrib diameter    -1.2178499209800135
+    Attrib perimeter    0.23758702151057864
+    Attrib bending_energy    -0.8675352245023924
+    Attrib center_of_mass_x    3.5303037398304853
+    Attrib center_of_mass_y    -1.2144305583927328
+    Attrib number_of_peaks    -0.023158409282456913
+    Attrib fourier1    -0.009968946566088124
+    Attrib fourier2    -0.13169600075219484
+    Attrib fourier3    0.5667724115051396
+    Attrib fourier4    -0.27229294697738443
+    Attrib fourier5    0.6552284851057416
+    Attrib fourier6    -0.2028771141377029
+    Attrib fourier7    0.1913036347369795
+    Attrib fourier8    -0.10426166780775796
+    Attrib fourier9    -0.32519001602632747
+    Attrib fourier10    0.32961784244259146
+    Attrib fourier11    -0.14606848089803004
+    Attrib fourier12    0.524617426413734
+    Attrib fourier13    -0.051554527319894794
+    Attrib fourier14    -0.039956730876733154
+    Attrib fourier15    0.2386753162833795
+    Attrib fourier16    0.22446388932301925
+    Attrib fourier17    0.4383659234894238
+    Attrib fourier18    0.38170074014261635
+    Attrib fourier19    0.15068752155484672
+    Attrib fourier20    -0.1902845240283467
+    Attrib fourier21    0.10331896397488263
+    Attrib curve_fourier1    -0.06821127544053775
+    Attrib curve_fourier2    0.04440984259136352
+    Attrib curve_fourier3    0.24114095135698216
+    Attrib curve_fourier4    -0.6206946599083404
+    Attrib curve_fourier5    0.3310514554664412
+    Attrib curve_fourier6    -0.6938015537522441
+    Attrib curve_fourier7    -0.1821669519750628
+    Attrib curve_fourier8    0.05264635423074969
+    Attrib curve_fourier9    -0.7244991412218268
+    Attrib curve_fourier10    -0.12834470434191975
+    Attrib curve_fourier11    1.568692144872718
+    Attrib curve_fourier12    -0.1813976053786215
+    Attrib curve_fourier13    -0.6258308716353722
+    Attrib curve_fourier14    -0.3530484532037933
+    Attrib curve_fourier15    -0.1605056660227107
+    Attrib curve_fourier16    -0.5947512024933553
+    Attrib curve_fourier17    -0.04482726480870388
+    Attrib curve_fourier18    -0.2441049823521197
+    Attrib curve_fourier19    0.27212181472027247
+    Attrib curve_fourier20    -0.1282790513441053
+    Attrib curve_fourier21    0.39572222649467514
+Sigmoid Node 20
+    Inputs    Weights
+    Threshold    0.746714105610488
+    Attrib area    -0.9241666306800755
+    Attrib diameter    1.0634022266888967
+    Attrib perimeter    -0.040017262910777666
+    Attrib bending_energy    0.3777390584169431
+    Attrib center_of_mass_x    0.8162788080558826
+    Attrib center_of_mass_y    2.310832726216499
+    Attrib number_of_peaks    -0.036332344269246516
+    Attrib fourier1    -0.2016375167012782
+    Attrib fourier2    0.4242005488967646
+    Attrib fourier3    -0.22910198979294286
+    Attrib fourier4    0.18748863321358644
+    Attrib fourier5    -0.0953530235376426
+    Attrib fourier6    -0.2834123310189688
+    Attrib fourier7    -0.02101371817931239
+    Attrib fourier8    0.054392361146247535
+    Attrib fourier9    0.05548961128657284
+    Attrib fourier10    0.07457758967681581
+    Attrib fourier11    -0.026583737233921396
+    Attrib fourier12    -0.5336846950603678
+    Attrib fourier13    0.09404470466887808
+    Attrib fourier14    -0.1287993363339907
+    Attrib fourier15    0.029337933581696514
+    Attrib fourier16    -0.0831625081375816
+    Attrib fourier17    0.077813534698404
+    Attrib fourier18    0.22555822489866417
+    Attrib fourier19    -0.02969091829916131
+    Attrib fourier20    0.3807355182709682
+    Attrib fourier21    0.38785198573973834
+    Attrib curve_fourier1    -0.4013278320334617
+    Attrib curve_fourier2    0.20741399495610047
+    Attrib curve_fourier3    -0.013227383511272917
+    Attrib curve_fourier4    0.2697213564846538
+    Attrib curve_fourier5    -0.20108957538355013
+    Attrib curve_fourier6    0.08336812619309009
+    Attrib curve_fourier7    0.08099309585961634
+    Attrib curve_fourier8    0.1674500159131837
+    Attrib curve_fourier9    -0.03608298257258339
+    Attrib curve_fourier10    -0.8603220685250718
+    Attrib curve_fourier11    0.36390033996753823
+    Attrib curve_fourier12    -0.7752065119859007
+    Attrib curve_fourier13    0.15482104075947178
+    Attrib curve_fourier14    -0.011892705243809214
+    Attrib curve_fourier15    0.03495275081546021
+    Attrib curve_fourier16    -0.08111174090910687
+    Attrib curve_fourier17    0.17738387276082013
+    Attrib curve_fourier18    0.08601537206045388
+    Attrib curve_fourier19    0.0537713352165432
+    Attrib curve_fourier20    -0.09798179925247959
+    Attrib curve_fourier21    -0.0869022890128224
+Sigmoid Node 21
+    Inputs    Weights
+    Threshold    1.4872949956946566
+    Attrib area    0.011211138870563485
+    Attrib diameter    0.7300450347875366
+    Attrib perimeter    0.9067876261596418
+    Attrib bending_energy    -0.01683516984116917
+    Attrib center_of_mass_x    0.5533079668024128
+    Attrib center_of_mass_y    0.41846852959724096
+    Attrib number_of_peaks    0.9989185156775381
+    Attrib fourier1    0.1593218735227852
+    Attrib fourier2    0.6970359960434234
+    Attrib fourier3    0.05079128035644302
+    Attrib fourier4    -0.06844068239159926
+    Attrib fourier5    0.5415440289926302
+    Attrib fourier6    0.3989142117771522
+    Attrib fourier7    0.016742211957896862
+    Attrib fourier8    0.03952567961056494
+    Attrib fourier9    0.09819353722842791
+    Attrib fourier10    0.07972446053439416
+    Attrib fourier11    0.3073790321677556
+    Attrib fourier12    -0.12580023282106312
+    Attrib fourier13    -0.11052896139304184
+    Attrib fourier14    0.06505178992790046
+    Attrib fourier15    5.288124758481933E-4
+    Attrib fourier16    0.4496370343121179
+    Attrib fourier17    0.42637581845906297
+    Attrib fourier18    -0.16482477014373462
+    Attrib fourier19    0.1533000627719767
+    Attrib fourier20    0.7237471070481715
+    Attrib fourier21    0.082499807403489
+    Attrib curve_fourier1    -0.046995042184989434
+    Attrib curve_fourier2    0.5901336827194574
+    Attrib curve_fourier3    0.17624094883314925
+    Attrib curve_fourier4    -0.19982086509085656
+    Attrib curve_fourier5    0.2516972481925475
+    Attrib curve_fourier6    0.42438081586687165
+    Attrib curve_fourier7    -0.03822349086247649
+    Attrib curve_fourier8    -0.11536569442398535
+    Attrib curve_fourier9    -0.13989232954695638
+    Attrib curve_fourier10    -0.08548255738208269
+    Attrib curve_fourier11    0.49203550221282644
+    Attrib curve_fourier12    -0.024699986036521942
+    Attrib curve_fourier13    -0.1867844641751506
+    Attrib curve_fourier14    -0.08034295629388626
+    Attrib curve_fourier15    0.036281017306111545
+    Attrib curve_fourier16    0.35246011561573043
+    Attrib curve_fourier17    0.4102761241699914
+    Attrib curve_fourier18    -0.24342867840218765
+    Attrib curve_fourier19    0.07507310320581652
+    Attrib curve_fourier20    0.5951792550832918
+    Attrib curve_fourier21    0.044227331667486
+Sigmoid Node 22
+    Inputs    Weights
+    Threshold    -0.1280051010841149
+    Attrib area    -1.0493485477584767
+    Attrib diameter    1.1693062553904892
+    Attrib perimeter    -1.0224272912312453
+    Attrib bending_energy    1.7548307583579206
+    Attrib center_of_mass_x    -0.9949331779371293
+    Attrib center_of_mass_y    3.010300872123165
+    Attrib number_of_peaks    -0.9514287011434103
+    Attrib fourier1    -0.4379872092593001
+    Attrib fourier2    0.27657008565546404
+    Attrib fourier3    -0.7196433836762078
+    Attrib fourier4    0.4903114730524529
+    Attrib fourier5    -0.8543719630465239
+    Attrib fourier6    -0.6545157935315674
+    Attrib fourier7    -0.20281170293989234
+    Attrib fourier8    -0.0014140093145224859
+    Attrib fourier9    0.6298154566194929
+    Attrib fourier10    1.2135649504492882
+    Attrib fourier11    -0.20992028319628128
+    Attrib fourier12    -0.2160912557650661
+    Attrib fourier13    -0.0768461252173477
+    Attrib fourier14    -0.4592469605206523
+    Attrib fourier15    -0.28332271937295705
+    Attrib fourier16    -0.5909068465514998
+    Attrib fourier17    -0.5347790637380815
+    Attrib fourier18    0.11984122043110955
+    Attrib fourier19    -0.33917766931687326
+    Attrib fourier20    0.09754285610092776
+    Attrib fourier21    0.20193052203780862
+    Attrib curve_fourier1    -0.151521619862019
+    Attrib curve_fourier2    0.22246217559251533
+    Attrib curve_fourier3    -0.32165678826385075
+    Attrib curve_fourier4    0.6730322090530291
+    Attrib curve_fourier5    -0.6162455634262507
+    Attrib curve_fourier6    0.18174790536050323
+    Attrib curve_fourier7    0.09881481841421193
+    Attrib curve_fourier8    0.16977292934699734
+    Attrib curve_fourier9    0.43568523503380524
+    Attrib curve_fourier10    0.030738158157801936
+    Attrib curve_fourier11    0.08440183165096916
+    Attrib curve_fourier12    0.036985522483774465
+    Attrib curve_fourier13    0.5667720901102621
+    Attrib curve_fourier14    0.1144556585003319
+    Attrib curve_fourier15    0.01055663858865987
+    Attrib curve_fourier16    -0.06905725308419086
+    Attrib curve_fourier17    -0.05831132396385035
+    Attrib curve_fourier18    0.31512217912919993
+    Attrib curve_fourier19    -0.17427053408893142
+    Attrib curve_fourier20    -0.05659383913811986
+    Attrib curve_fourier21    -0.13492492698367095
+Sigmoid Node 23
+    Inputs    Weights
+    Threshold    -0.12001507340979953
+    Attrib area    1.1040261161845968
+    Attrib diameter    -1.185115505878169
+    Attrib perimeter    0.2581454660363487
+    Attrib bending_energy    -0.24644677248911506
+    Attrib center_of_mass_x    -2.373755399849236
+    Attrib center_of_mass_y    -2.91012288219336
+    Attrib number_of_peaks    -0.2152304322659255
+    Attrib fourier1    -0.19506554984047514
+    Attrib fourier2    -0.9494198420385074
+    Attrib fourier3    -0.12073931038732809
+    Attrib fourier4    -0.46617025009404217
+    Attrib fourier5    -0.39897026235418054
+    Attrib fourier6    1.401276505907284
+    Attrib fourier7    -0.041382666167299284
+    Attrib fourier8    1.0285293318186308
+    Attrib fourier9    1.1350153575877289
+    Attrib fourier10    -1.075884248320823
+    Attrib fourier11    -0.13311505345734456
+    Attrib fourier12    0.01883959321869323
+    Attrib fourier13    0.698901269518899
+    Attrib fourier14    1.2503535598310103
+    Attrib fourier15    -0.21944096708209912
+    Attrib fourier16    0.03378813565601009
+    Attrib fourier17    -0.3728582687097121
+    Attrib fourier18    -0.6121701625036189
+    Attrib fourier19    -0.44048290299522996
+    Attrib fourier20    -0.8789274325411938
+    Attrib fourier21    -1.3691614900996916
+    Attrib curve_fourier1    0.6365914740575649
+    Attrib curve_fourier2    -0.47969616214447164
+    Attrib curve_fourier3    -0.02629959676418304
+    Attrib curve_fourier4    -0.3489710679967756
+    Attrib curve_fourier5    -0.0963378337326146
+    Attrib curve_fourier6    0.649023811980566
+    Attrib curve_fourier7    0.013671623041029913
+    Attrib curve_fourier8    0.9477008215655089
+    Attrib curve_fourier9    1.1843904253138466
+    Attrib curve_fourier10    1.2633313336297762
+    Attrib curve_fourier11    -2.2025884486412153
+    Attrib curve_fourier12    1.5019000836737948
+    Attrib curve_fourier13    0.9776453349806387
+    Attrib curve_fourier14    1.144789871101774
+    Attrib curve_fourier15    0.10022571763350456
+    Attrib curve_fourier16    0.35544726285501566
+    Attrib curve_fourier17    -0.10195509167784221
+    Attrib curve_fourier18    -0.31164912594898
+    Attrib curve_fourier19    -0.14729365810119296
+    Attrib curve_fourier20    0.1614864808005446
+    Attrib curve_fourier21    0.25530391194562274
+Sigmoid Node 24
+    Inputs    Weights
+    Threshold    -0.4515136222737801
+    Attrib area    1.1621723783257738
+    Attrib diameter    -1.4254932892533771
+    Attrib perimeter    0.6112352615616253
+    Attrib bending_energy    -0.8586391585366577
+    Attrib center_of_mass_x    0.6598527990977706
+    Attrib center_of_mass_y    -3.293289569170862
+    Attrib number_of_peaks    0.9106180440892511
+    Attrib fourier1    0.33833734146956657
+    Attrib fourier2    -0.4308965809685185
+    Attrib fourier3    0.33524101999625994
+    Attrib fourier4    -0.5452074150047143
+    Attrib fourier5    0.159487667391075
+    Attrib fourier6    0.6093063059323809
+    Attrib fourier7    -0.17797327519359635
+    Attrib fourier8    -0.1158097135420408
+    Attrib fourier9    0.061079516564949615
+    Attrib fourier10    -0.5641852783662222
+    Attrib fourier11    -0.07201226388005685
+    Attrib fourier12    0.6634917423133978
+    Attrib fourier13    -0.1328020758357576
+    Attrib fourier14    0.2752109102236585
+    Attrib fourier15    -0.4162030454933974
+    Attrib fourier16    0.2848361486391515
+    Attrib fourier17    -0.12471902013362018
+    Attrib fourier18    -0.46526348339368834
+    Attrib fourier19    -0.04428442282482803
+    Attrib fourier20    -0.28297294222143526
+    Attrib fourier21    -0.5621753274206133
+    Attrib curve_fourier1    0.7575581664909342
+    Attrib curve_fourier2    0.044454105255152365
+    Attrib curve_fourier3    0.020162852409954888
+    Attrib curve_fourier4    -0.5960915039084911
+    Attrib curve_fourier5    0.0791901885007168
+    Attrib curve_fourier6    -0.06845195461352968
+    Attrib curve_fourier7    -0.2772361625395708
+    Attrib curve_fourier8    -0.19022361388860556
+    Attrib curve_fourier9    0.19899655790606668
+    Attrib curve_fourier10    1.2810015990893646
+    Attrib curve_fourier11    -0.4206873831836701
+    Attrib curve_fourier12    1.4066112050965602
+    Attrib curve_fourier13    -0.05367454556830891
+    Attrib curve_fourier14    4.8381307495330494E-4
+    Attrib curve_fourier15    -0.22747877315863488
+    Attrib curve_fourier16    0.16907842514254642
+    Attrib curve_fourier17    -0.37266654011361167
+    Attrib curve_fourier18    -0.4098841628721918
+    Attrib curve_fourier19    -0.037638069668038676
+    Attrib curve_fourier20    0.4952814557563987
+    Attrib curve_fourier21    0.4918320838788521
+Sigmoid Node 25
+    Inputs    Weights
+    Threshold    -1.3229494299002706
+    Attrib area    2.147455936896477
+    Attrib diameter    -1.8066827323512153
+    Attrib perimeter    0.2043564864989214
+    Attrib bending_energy    -0.4475379144947642
+    Attrib center_of_mass_x    -1.3529183217221803
+    Attrib center_of_mass_y    -3.866620112371886
+    Attrib number_of_peaks    0.022724163875178456
+    Attrib fourier1    0.19764402999753566
+    Attrib fourier2    -1.0518907106004465
+    Attrib fourier3    0.15854533608714028
+    Attrib fourier4    -0.45677348936764894
+    Attrib fourier5    -0.3332662666337718
+    Attrib fourier6    1.113811651145094
+    Attrib fourier7    -0.03626171830666131
+    Attrib fourier8    0.45530468557468395
+    Attrib fourier9    0.6989822647638517
+    Attrib fourier10    -1.093488023629122
+    Attrib fourier11    -0.25106676691278224
+    Attrib fourier12    0.21048520515582825
+    Attrib fourier13    0.32927101835232236
+    Attrib fourier14    0.6787166950443629
+    Attrib fourier15    -0.2643898492874965
+    Attrib fourier16    0.13193508160276168
+    Attrib fourier17    -0.5134156398893014
+    Attrib fourier18    -0.6242514727697813
+    Attrib fourier19    -0.177963785608602
+    Attrib fourier20    -0.8710192229799133
+    Attrib fourier21    -1.204084782874817
+    Attrib curve_fourier1    0.9278706250351334
+    Attrib curve_fourier2    -0.42853584895331154
+    Attrib curve_fourier3    0.0686082979417031
+    Attrib curve_fourier4    -0.29892859126204685
+    Attrib curve_fourier5    -0.022806348102414113
+    Attrib curve_fourier6    0.29100406994964756
+    Attrib curve_fourier7    0.03509405935083208
+    Attrib curve_fourier8    0.19917253891322897
+    Attrib curve_fourier9    0.8620416759584395
+    Attrib curve_fourier10    1.5626016203692834
+    Attrib curve_fourier11    -1.907772815817119
+    Attrib curve_fourier12    1.6836540460321032
+    Attrib curve_fourier13    0.6235814162212587
+    Attrib curve_fourier14    0.4219335770366423
+    Attrib curve_fourier15    0.07905229342526993
+    Attrib curve_fourier16    0.35779460006333785
+    Attrib curve_fourier17    -0.4697765541910494
+    Attrib curve_fourier18    -0.2909138994933098
+    Attrib curve_fourier19    -0.20714221295495724
+    Attrib curve_fourier20    0.18049476506597867
+    Attrib curve_fourier21    0.33179512372667597
+Sigmoid Node 26
+    Inputs    Weights
+    Threshold    -0.33453054065186144
+    Attrib area    -2.761126827629526
+    Attrib diameter    -0.9436130717269496
+    Attrib perimeter    -0.323952451322557
+    Attrib bending_energy    0.2113823198788882
+    Attrib center_of_mass_x    3.5693954414321936
+    Attrib center_of_mass_y    -0.08414267884458297
+    Attrib number_of_peaks    -0.21458267784382332
+    Attrib fourier1    -0.1985206841832514
+    Attrib fourier2    0.09203298911224778
+    Attrib fourier3    0.12728110821602612
+    Attrib fourier4    -0.4183513977990317
+    Attrib fourier5    0.16648980917333914
+    Attrib fourier6    -0.640899694253879
+    Attrib fourier7    0.0033492916931615185
+    Attrib fourier8    -0.18150929268236835
+    Attrib fourier9    0.31248901115893934
+    Attrib fourier10    1.8216775206354736
+    Attrib fourier11    -0.2690837115153708
+    Attrib fourier12    1.0705228318803788
+    Attrib fourier13    -0.12596244668048698
+    Attrib fourier14    -0.3703044835378396
+    Attrib fourier15    -0.09126970498760642
+    Attrib fourier16    -0.06231640730018196
+    Attrib fourier17    -0.007927149246473038
+    Attrib fourier18    0.2310423824043601
+    Attrib fourier19    -0.183858396871637
+    Attrib fourier20    -0.13953703036166967
+    Attrib fourier21    0.16495670108265426
+    Attrib curve_fourier1    0.01768455198421259
+    Attrib curve_fourier2    0.44445575958181344
+    Attrib curve_fourier3    -0.018756726961716062
+    Attrib curve_fourier4    -0.7007572629575478
+    Attrib curve_fourier5    -0.10191233212831174
+    Attrib curve_fourier6    -0.7055288533408005
+    Attrib curve_fourier7    -0.3251690114614942
+    Attrib curve_fourier8    0.27058656908245965
+    Attrib curve_fourier9    -0.3934851459837195
+    Attrib curve_fourier10    0.7787256649447969
+    Attrib curve_fourier11    2.153977295220192
+    Attrib curve_fourier12    0.7095066249887876
+    Attrib curve_fourier13    -0.3880036502173842
+    Attrib curve_fourier14    -0.2219763875698963
+    Attrib curve_fourier15    -0.24756545758404142
+    Attrib curve_fourier16    -0.7024822825442679
+    Attrib curve_fourier17    -0.33024843538084336
+    Attrib curve_fourier18    -0.29064587781539725
+    Attrib curve_fourier19    0.15982726809628184
+    Attrib curve_fourier20    0.19549674530881886
+    Attrib curve_fourier21    0.5844036387474855
+Sigmoid Node 27
+    Inputs    Weights
+    Threshold    -0.10214443295737884
+    Attrib area    -1.9601785582864737
+    Attrib diameter    1.7123564762066825
+    Attrib perimeter    -0.7254703471931794
+    Attrib bending_energy    0.9757624208879401
+    Attrib center_of_mass_x    3.814227940980764
+    Attrib center_of_mass_y    4.833227169568158
+    Attrib number_of_peaks    -0.19994951520166163
+    Attrib fourier1    0.12447039126904266
+    Attrib fourier2    1.4153015144572616
+    Attrib fourier3    -0.023422122342770496
+    Attrib fourier4    0.5583931390726247
+    Attrib fourier5    0.5594816074077416
+    Attrib fourier6    -2.2359065610064377
+    Attrib fourier7    0.1321151476454512
+    Attrib fourier8    -1.6801857195447096
+    Attrib fourier9    -1.8479250266076221
+    Attrib fourier10    1.9425962039489775
+    Attrib fourier11    0.32740757408503623
+    Attrib fourier12    0.27518890463208956
+    Attrib fourier13    -1.2650058319931392
+    Attrib fourier14    -2.204867166251695
+    Attrib fourier15    0.45388871748473236
+    Attrib fourier16    0.1334484864085741
+    Attrib fourier17    0.5338433346692812
+    Attrib fourier18    1.005047354157638
+    Attrib fourier19    0.5235991611890622
+    Attrib fourier20    1.3641692469473972
+    Attrib fourier21    2.456376325559805
+    Attrib curve_fourier1    -1.0603909605652289
+    Attrib curve_fourier2    0.9107643863994824
+    Attrib curve_fourier3    0.03640843420911144
+    Attrib curve_fourier4    0.3828146492833454
+    Attrib curve_fourier5    0.1107645767197268
+    Attrib curve_fourier6    -0.8784689851667644
+    Attrib curve_fourier7    0.048587562400165804
+    Attrib curve_fourier8    -1.3251812674693413
+    Attrib curve_fourier9    -1.9396810000362583
+    Attrib curve_fourier10    -1.8684710658018118
+    Attrib curve_fourier11    3.58654353175989
+    Attrib curve_fourier12    -2.198050330507106
+    Attrib curve_fourier13    -1.5139993630342508
+    Attrib curve_fourier14    -1.8107438034134085
+    Attrib curve_fourier15    -0.14640654331761035
+    Attrib curve_fourier16    -0.298461392169147
+    Attrib curve_fourier17    -0.018544924492608937
+    Attrib curve_fourier18    0.5301028646550557
+    Attrib curve_fourier19    0.10879342803425988
+    Attrib curve_fourier20    0.0114614519539861
+    Attrib curve_fourier21    -0.30147044386644617
+Sigmoid Node 28
+    Inputs    Weights
+    Threshold    0.6638820168473951
+    Attrib area    -0.4350078601330347
+    Attrib diameter    1.275128237115847
+    Attrib perimeter    -0.24825463410192636
+    Attrib bending_energy    0.964206734395595
+    Attrib center_of_mass_x    0.8093060061571453
+    Attrib center_of_mass_y    3.0433506105962906
+    Attrib number_of_peaks    -0.3480456839152528
+    Attrib fourier1    -0.2794378137218362
+    Attrib fourier2    0.43426202900197636
+    Attrib fourier3    -0.327920226729842
+    Attrib fourier4    0.4456482843775086
+    Attrib fourier5    -0.2702629679898788
+    Attrib fourier6    -0.4024835443540138
+    Attrib fourier7    -0.017363892607988686
+    Attrib fourier8    -0.005059725572813598
+    Attrib fourier9    0.039217882925403964
+    Attrib fourier10    0.016082202332976907
+    Attrib fourier11    -0.08950399230037435
+    Attrib fourier12    -0.774950033617146
+    Attrib fourier13    0.0618764749286346
+    Attrib fourier14    -0.38788341311322844
+    Attrib fourier15    0.13440617316940356
+    Attrib fourier16    -0.2447210114974825
+    Attrib fourier17    0.04090986880896333
+    Attrib fourier18    0.2846538289444924
+    Attrib fourier19    -0.057425531950877434
+    Attrib fourier20    0.35740641290327
+    Attrib fourier21    0.44344258799632735
+    Attrib curve_fourier1    -0.3838869023605304
+    Attrib curve_fourier2    0.16293332964156987
+    Attrib curve_fourier3    -0.033762017887781014
+    Attrib curve_fourier4    0.49856740695161395
+    Attrib curve_fourier5    -0.2501982179149424
+    Attrib curve_fourier6    0.10896564373744103
+    Attrib curve_fourier7    0.0805750143072984
+    Attrib curve_fourier8    -0.01693444978583766
+    Attrib curve_fourier9    -0.05006923666982774
+    Attrib curve_fourier10    -1.1233383553036542
+    Attrib curve_fourier11    0.2148766000595582
+    Attrib curve_fourier12    -1.026267452500842
+    Attrib curve_fourier13    0.26406464429127596
+    Attrib curve_fourier14    -0.09459082760916093
+    Attrib curve_fourier15    0.13950801513082192
+    Attrib curve_fourier16    -0.09129550631895246
+    Attrib curve_fourier17    0.13952136374319613
+    Attrib curve_fourier18    0.2929367959271843
+    Attrib curve_fourier19    0.049024297914232656
+    Attrib curve_fourier20    -0.12473772048136071
+    Attrib curve_fourier21    -0.14316098872385583
+Sigmoid Node 29
+    Inputs    Weights
+    Threshold    -0.3543086771850338
+    Attrib area    4.331358843920703
+    Attrib diameter    1.0459620141286805
+    Attrib perimeter    -0.353255376265025
+    Attrib bending_energy    0.4473342415224381
+    Attrib center_of_mass_x    -3.1359690775561195
+    Attrib center_of_mass_y    1.6342555604427003
+    Attrib number_of_peaks    -0.8774349368677472
+    Attrib fourier1    0.08210678480590432
+    Attrib fourier2    0.16523570629043452
+    Attrib fourier3    -0.025119557022336824
+    Attrib fourier4    1.1211917513368297
+    Attrib fourier5    -0.4825451429186544
+    Attrib fourier6    0.19986589468672544
+    Attrib fourier7    -0.08394566592261445
+    Attrib fourier8    -0.15550592735608595
+    Attrib fourier9    -1.2729950920073438
+    Attrib fourier10    -2.41941164614206
+    Attrib fourier11    0.3637386881928598
+    Attrib fourier12    -2.004040963465186
+    Attrib fourier13    -0.11726032181904855
+    Attrib fourier14    -0.47315701971627927
+    Attrib fourier15    0.23445718747449273
+    Attrib fourier16    0.04833768258252865
+    Attrib fourier17    0.03261852142856238
+    Attrib fourier18    0.44755050669850843
+    Attrib fourier19    0.44622448217776073
+    Attrib fourier20    0.41967787716500166
+    Attrib fourier21    0.44020330881793157
+    Attrib curve_fourier1    -0.07255964997784119
+    Attrib curve_fourier2    -0.2147648915927983
+    Attrib curve_fourier3    0.29750522475706026
+    Attrib curve_fourier4    1.626124468100382
+    Attrib curve_fourier5    -0.15751129301950598
+    Attrib curve_fourier6    0.7481704302003123
+    Attrib curve_fourier7    0.26580752654593237
+    Attrib curve_fourier8    -0.8904972632323394
+    Attrib curve_fourier9    -0.14083086668775083
+    Attrib curve_fourier10    -2.157881084216068
+    Attrib curve_fourier11    -2.7159656856090155
+    Attrib curve_fourier12    -2.186089280656483
+    Attrib curve_fourier13    0.20677444385863608
+    Attrib curve_fourier14    -0.41635873850206867
+    Attrib curve_fourier15    0.28373388550754514
+    Attrib curve_fourier16    0.7732751485313402
+    Attrib curve_fourier17    0.33486395860997487
+    Attrib curve_fourier18    1.074920868387798
+    Attrib curve_fourier19    0.08774734987808352
+    Attrib curve_fourier20    -0.1004091106610893
+    Attrib curve_fourier21    -0.6069228606424126
+Sigmoid Node 30
+    Inputs    Weights
+    Threshold    1.0086982613025681
+    Attrib area    0.1713083887702881
+    Attrib diameter    0.6819424818278198
+    Attrib perimeter    0.6756238561737329
+    Attrib bending_energy    -0.10212934301927039
+    Attrib center_of_mass_x    0.42603496969497406
+    Attrib center_of_mass_y    0.4922263646467911
+    Attrib number_of_peaks    0.9948785761011869
+    Attrib fourier1    0.21495353343000811
+    Attrib fourier2    0.6230923195324306
+    Attrib fourier3    0.07735114870064345
+    Attrib fourier4    -0.08313712978611792
+    Attrib fourier5    0.40252300599092494
+    Attrib fourier6    0.2376353117929959
+    Attrib fourier7    -0.029056443220564054
+    Attrib fourier8    -0.07523679782611682
+    Attrib fourier9    -0.0489459309335619
+    Attrib fourier10    0.06848889211832089
+    Attrib fourier11    0.32006656433460234
+    Attrib fourier12    -0.1638482306452604
+    Attrib fourier13    -0.2129020754063472
+    Attrib fourier14    0.027541872077393476
+    Attrib fourier15    -0.006670513439065049
+    Attrib fourier16    0.31973445084787777
+    Attrib fourier17    0.30894714850832017
+    Attrib fourier18    -0.07577169288656711
+    Attrib fourier19    0.10680790379998228
+    Attrib fourier20    0.6377175657599092
+    Attrib fourier21    0.10660874789858478
+    Attrib curve_fourier1    -0.008593960063664424
+    Attrib curve_fourier2    0.4895285127350965
+    Attrib curve_fourier3    0.12947400051131006
+    Attrib curve_fourier4    -0.0704509332428503
+    Attrib curve_fourier5    0.21266892825662248
+    Attrib curve_fourier6    0.26151419235202183
+    Attrib curve_fourier7    -0.07050509484054547
+    Attrib curve_fourier8    -0.1356724327879949
+    Attrib curve_fourier9    -0.22180363830836106
+    Attrib curve_fourier10    -0.06536757589566106
+    Attrib curve_fourier11    0.3285653474624205
+    Attrib curve_fourier12    -0.0874582643008806
+    Attrib curve_fourier13    -0.17624302622198765
+    Attrib curve_fourier14    -0.05054518202769219
+    Attrib curve_fourier15    0.04066743519911771
+    Attrib curve_fourier16    0.2738396865473729
+    Attrib curve_fourier17    0.2637007748291937
+    Attrib curve_fourier18    -0.15334600241917232
+    Attrib curve_fourier19    0.105179695080601
+    Attrib curve_fourier20    0.5349750145377958
+    Attrib curve_fourier21    -0.007542679209267666
+Sigmoid Node 31
+    Inputs    Weights
+    Threshold    -0.3758277332250043
+    Attrib area    3.040519834040618
+    Attrib diameter    0.515608616298179
+    Attrib perimeter    -0.02456010660755953
+    Attrib bending_energy    -0.17772936509477252
+    Attrib center_of_mass_x    -3.732047631968056
+    Attrib center_of_mass_y    -0.41810082467177934
+    Attrib number_of_peaks    0.11414542569566719
+    Attrib fourier1    0.21076697740476527
+    Attrib fourier2    -0.02923444198988414
+    Attrib fourier3    -0.06322800582740717
+    Attrib fourier4    0.49553431572248186
+    Attrib fourier5    -0.3378130900122098
+    Attrib fourier6    0.6841682363194634
+    Attrib fourier7    0.019017486127413417
+    Attrib fourier8    0.19677916041540677
+    Attrib fourier9    -0.30962113290199345
+    Attrib fourier10    -1.67704892961699
+    Attrib fourier11    0.34566105195088637
+    Attrib fourier12    -1.0283015528075974
+    Attrib fourier13    0.08531903123692912
+    Attrib fourier14    0.24065197393175794
+    Attrib fourier15    -0.05072859455870247
+    Attrib fourier16    0.09872409333062442
+    Attrib fourier17    -0.17133210679775668
+    Attrib fourier18    -0.07783427666755881
+    Attrib fourier19    0.18212969307736632
+    Attrib fourier20    0.13213054775814725
+    Attrib fourier21    -0.21930411559564505
+    Attrib curve_fourier1    0.13789812608800572
+    Attrib curve_fourier2    -0.22160152752968024
+    Attrib curve_fourier3    -0.0324737266404612
+    Attrib curve_fourier4    0.827105563312128
+    Attrib curve_fourier5    0.03811851660073646
+    Attrib curve_fourier6    0.8255867038037719
+    Attrib curve_fourier7    0.2719098570729099
+    Attrib curve_fourier8    -0.26140284224860927
+    Attrib curve_fourier9    0.4247722374951006
+    Attrib curve_fourier10    -0.4775699685291446
+    Attrib curve_fourier11    -2.234999724085501
+    Attrib curve_fourier12    -0.36772264261768817
+    Attrib curve_fourier13    0.3595240126193752
+    Attrib curve_fourier14    0.19813690561184297
+    Attrib curve_fourier15    0.21677015489533896
+    Attrib curve_fourier16    0.808508782836241
+    Attrib curve_fourier17    0.12174700695420831
+    Attrib curve_fourier18    0.48968543852930513
+    Attrib curve_fourier19    -0.13554672249585287
+    Attrib curve_fourier20    0.03656529639255364
+    Attrib curve_fourier21    -0.47529840279633073
+Sigmoid Node 32
+    Inputs    Weights
+    Threshold    0.008713976583184187
+    Attrib area    -1.4895642420780257
+    Attrib diameter    0.35424719336484817
+    Attrib perimeter    -0.2133417659688909
+    Attrib bending_energy    0.04885753325347681
+    Attrib center_of_mass_x    1.1192386346219734
+    Attrib center_of_mass_y    1.4061435289507245
+    Attrib number_of_peaks    -0.24888868999119804
+    Attrib fourier1    -0.09569077779570649
+    Attrib fourier2    0.2334494762308983
+    Attrib fourier3    -0.10189058079339021
+    Attrib fourier4    0.2031073423600835
+    Attrib fourier5    0.006999952436930408
+    Attrib fourier6    -0.36977548147210787
+    Attrib fourier7    -0.19081691900120643
+    Attrib fourier8    0.15857123758893238
+    Attrib fourier9    0.028851422539344918
+    Attrib fourier10    0.4643572617643164
+    Attrib fourier11    -0.18856477606294086
+    Attrib fourier12    -0.11951269164711084
+    Attrib fourier13    0.09979865817899711
+    Attrib fourier14    0.10082880267545993
+    Attrib fourier15    -0.1291379164716697
+    Attrib fourier16    -0.24121715986941566
+    Attrib fourier17    0.10510945143292634
+    Attrib fourier18    0.29003805702360674
+    Attrib fourier19    -0.008686137697758035
+    Attrib fourier20    0.15819903842640032
+    Attrib fourier21    0.3252999646737416
+    Attrib curve_fourier1    -0.08918828141314038
+    Attrib curve_fourier2    0.09961615703545046
+    Attrib curve_fourier3    -0.004506757463946628
+    Attrib curve_fourier4    0.10258271205725611
+    Attrib curve_fourier5    -0.15741385169524427
+    Attrib curve_fourier6    -0.09862571609044946
+    Attrib curve_fourier7    -0.16637589123687369
+    Attrib curve_fourier8    0.3917623551247532
+    Attrib curve_fourier9    -0.06733605463882293
+    Attrib curve_fourier10    -0.49346923654861646
+    Attrib curve_fourier11    0.5683083977914505
+    Attrib curve_fourier12    -0.48960494755238343
+    Attrib curve_fourier13    0.028681341522361976
+    Attrib curve_fourier14    0.18513365927507086
+    Attrib curve_fourier15    -0.23970065966430062
+    Attrib curve_fourier16    -0.4009782348029707
+    Attrib curve_fourier17    0.20560879233879856
+    Attrib curve_fourier18    0.1867806334091339
+    Attrib curve_fourier19    0.18706130250677658
+    Attrib curve_fourier20    -0.0637834242338579
+    Attrib curve_fourier21    0.24099332516841357
+Class ag
+    Input
+    Node 0
+Class bg
+    Input
+    Node 1
+Class cg
+    Input
+    Node 2
+Class lg
+    Input
+    Node 3
+Class me
+    Input
+    Node 4
+Class pe
+    Input
+    Node 5
+
+
+Time taken to build model: 0.97 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          53               85.4839 %
+Incorrectly Classified Instances         9               14.5161 %
+Kappa statistic                          0.8256
+Mean absolute error                      0.066 
+Root mean squared error                  0.2044
+Relative absolute error                 23.762  %
+Root relative squared error             54.8553 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.019      0.909     1         0.952      1        ag
+                 0.9       0.058      0.75      0.9       0.818      0.979    bg
+                 0.7       0.038      0.778     0.7       0.737      0.938    cg
+                 1         0          1         1         1          1        lg
+                 0.7       0.019      0.875     0.7       0.778      0.973    me
+                 0.833     0.04       0.833     0.833     0.833      0.957    pe
+Weighted Avg.    0.855     0.029      0.857     0.855     0.852      0.974
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 10  0  0  0  0  0 |  a = ag
+  0  9  1  0  0  0 |  b = bg
+  0  3  7  0  0  0 |  c = cg
+  0  0  0 10  0  0 |  d = lg
+  1  0  0  0  7  2 |  e = me
+  0  0  1  0  1 10 |  f = pe
