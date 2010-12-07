@@ -6,7 +6,7 @@ function [ X, Y ] = extractBorder( img )
     end;
     
     % Pad the array with 255 (background) to avoid an error if the object is located at the border of the image.
-    img = padarray(img, 1, 255);
+    img = padarray(img, [2 2], 255);
     
     [firstPixRow, firstPixCol] = findStartPixelPos(img);
     [secondPixRow, secondPixCol, fsDir] = findSecondPixelPos(img, firstPixRow, firstPixCol);
