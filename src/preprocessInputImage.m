@@ -3,7 +3,7 @@ function [ outImg ] = preprocessInputImage( img )
         img = im2bw(img);
     end;
     
-    se = strel('disk',10);
+    se = strel('disk',3);
     outImg = imclose(img, se);
 end
 

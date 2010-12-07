@@ -2,7 +2,7 @@ function [ npeaks ] = getNumberPeaks( X, Y )
     addpath('../');
     
     K = extractCurvature(X,Y);
-    K = conv(K, ones(10, 1), 'same');
+    %K = conv(K, ones(10, 1), 'same');
     
     DiffK = diff(K);
 
