@@ -1,18 +1,17 @@
 function [ npeaks ] = getNumberPeaks( X, Y )
     addpath('../');
     
-    k = extractCurvature(X,Y);
-    k = conv(k, ones(10, 1), 'same');
+    K = extractCurvature(X,Y);
+    K = conv(K, ones(10, 1), 'same');
     
-    der = diff(k);
+    DiffK = diff(K);
 
     % Count the number of peaks.
-    zeroCross = false(size(der));
+    zeroCross = false(size(DiffK));
     for i = 1 : size(zeroCross, 1) - 1
-        zeroCross(i) = (der(i) < 0 && der(i+1) >= 0) || (der(i) > 0 && der(i+1) <= 0) ;
+        zeroCross(i) = (DiffK(i) < 0 && DiffK(i+1) >= 0) || (DiffK(i) > 0 && DiffK(i+1) <= 0) ;
     end;
     
     npeaks = numel(find(zeroCross));
-
 end
 
