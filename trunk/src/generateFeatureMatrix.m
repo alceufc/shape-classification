@@ -1,8 +1,3 @@
-<<<<<<< .mine
-function [ featureMatrix ] = generateFeatureMatrix(  )
-    featureMatrix = generateDataSetMatrix();
-    featureMatrix = featureMatrix(:, 1 : size(featureMatrix,2) - 1);
-=======
 function [ featureMatrix ] = generateFeatureMatrix( dataSetMatrix )
     featureCellMatrix = dataSetMatrix(:, 1 : size(dataSetMatrix, 2) - 1);
    
@@ -10,5 +5,5 @@ function [ featureMatrix ] = generateFeatureMatrix( dataSetMatrix )
     for attr = 1 : size(featureMatrix, 2)
         featureMatrix(:, attr) = cat(2, featureCellMatrix{:, attr});
     end;
->>>>>>> .r28
+
 end
