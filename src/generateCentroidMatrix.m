@@ -3,10 +3,15 @@ function [ centroidMatrix ] = generateCentroidMatrix(  )
     %@ATTRIBUTE class  {ag, bg, cg, lg, me, pe}
     classes = ['ag'; 'bg'; 'cg'; 'lg'; 'me'; 'pe'];   
     
-    featureMatrix = generateDataSetMatrix();
+    dataSetMatrix = generateDataSetMatrix();
+    
+    featureMatrix = generateFeatureMatrix(dataSetMatrix);
+    featureMatrix = zscore(featureMatrix);
+    
     [fx, fy] = size(featureMatrix);
     
-    class1 = featureMatrix(find(featureMatrix(:,fy)=='ag'),1:fy-1);
+    %class1 = featureMatrix(find(featureMatrix{:,fy}=='ag'),1:fy-1);
+    for()
     
     %%%%%%%%%%%
     
