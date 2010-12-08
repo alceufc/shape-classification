@@ -24,9 +24,14 @@ function [ dataSetMatrix ] = generateDataSetMatrix(  )
             dataSetMatrix = cell(numberOfImages, length(splittedLine));
         end;
         
-        for i = 1: length(splittedLine);
-            dataSetMatrix{dataSetMatrixLine, i} = splittedLine{i};
+        % Save the feature vector numeric attributes.
+        for i = 1: length(splittedLine) - 1;
+            dataSetMatrix{dataSetMatrixLine, i} = str2double(splittedLine{i});
         end
+        
+        dataSetMatrix{dataSetMatrixLine, length(splittedLine)} = splittedLine{length(splittedLine)};
+        
+        % Save the class attribute.
         
         dataSetMatrixLine = dataSetMatrixLine + 1;
         tline = fgetl(classFile);
