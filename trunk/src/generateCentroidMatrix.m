@@ -6,7 +6,7 @@ function [ centroidMatrix ] = generateCentroidMatrix(  )
     featureMatrix = generateDataSetMatrix();
     [fx, fy] = size(featureMatrix);
     
-    class1 = featureMatrix(find(equal(featureMatrix(:,fy),'ag')),1:fy-1);
+    class1 = featureMatrix(find(featureMatrix(:,fy)=='ag'),1:fy-1);
     
     %%%%%%%%%%%
     
