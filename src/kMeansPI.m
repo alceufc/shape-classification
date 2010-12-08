@@ -4,27 +4,17 @@ function [ clusterMatrix ] = kMeansPI(dataSetMatrix)
     featureMatrix = generateFeatureMatrix(dataSetMatrix);
     featureMatrix = zscore(featureMatrix);
     
-    % Get the range of values for each attribute.
-    % Each line of attributesRanges corresponds to an attribute. The 1st and 2nd columns are, respectively  the minimum
-    % and maximum value of each attribute.
-    attributesRanges = zeros(size(featureMatrix, 2), 2);
-    
-    for attr = 1 : size(featureMatrix, 2)
-        attributesRanges(attr, 1) = min(featureMatrix(:, attr));
-        attributesRanges(attr, 2) = max(featureMatrix(:, attr));
-    end;
-    
     numberOfClasses = getNumberOfClasses(dataSetMatrix);
     numberOfFeatures = size(featureMatrix, 2);
+    numberOfRows = size(featureMatrix, 1);
     
     % Generate c random means, where c is the number of classes.
     % meansCoordinates(i, 1) and meansCoordinates(i, 2) corresponds to the coordinates (feature vector) of the i-th 
     % mean point.
+    seedsIndexes = generateSeedsIndexes(numberOfClasses, numberOfRows);
     meansCoordinates = zeros(numberOfClasses, numberOfFeatures);
     for meanPoint = 1 : size(meansCoordinates,1)
-        for attr = 1 : size(meansCoordinates, 2)
-            meansCoordinates(meanPoint, attr) = random('unif', attributesRanges(attr, 1), attributesRanges(attr, 2));
-        end;
+        meansCoordinates(meanPoint, :) = featureMatrix(seedsIndexes(meanPoint), :);
     end;
     
     % Run the main loop until no instance change its class.
@@ -41,7 +31,7 @@ function [ clusterMatrix ] = kMeansPI(dataSetMatrix)
         clusterSwapFlag = false;
         iterationCounter = iterationCounter + 1;
         
-        for row = 1 : size(featureMatrix, 1)
+        for row = 1 : numberOfRows
             newCluster = updateCluster(row, featureMatrix, meansCoordinates);
             if newCluster ~= clusterMatrix{row, 2}
                 clusterSwapFlag = true;
@@ -75,7 +65,7 @@ end
 function [ d ]  = euclidianDist(v1, v2)
     d = 0;
     for i = 1 : size(v1, 2)
-        d = d + (v1(i) * v2(i))^2;
+        d = d + (v1(i) - v2(i))^2;
     end;
 end
 
@@ -102,3 +92,14 @@ function [ meansCoordinates ] = updateMeansCoordinates(clusterMatrix, featureMat
     end;
 end
 
+function [seedsIndexes] = generateSeedsIndexes(numberOfClasses, numberOfRows)
+    seedsIndexes = zeros(1, numberOfClasses);
+    
+    for i = 1 : numberOfClasses
+        seedIdx = unidrnd(numberOfRows);
+        while numel(find(seedsIndexes(1:i) == seedIdx, 1)) ~= 0
+            seedIdx = unidrnd(numberOfRows);
+        end;
+        seedsIndexes(i) = seedIdx;
+    end;
+end
