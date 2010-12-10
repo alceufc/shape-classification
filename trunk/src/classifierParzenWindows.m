@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % This code assumes that featureMatrix has only 2 columns.
 function [ targets, outputs ] = classifierParzenWindows( featureMatrix, dataSetMatrix, trainingSetMask, parzenWindowSize, dimensionSize )
     featureMatrix = zscore(featureMatrix);

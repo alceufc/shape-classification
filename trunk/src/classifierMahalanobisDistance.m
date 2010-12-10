@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 function [ confusionMatrix, class ] = classifierMahalanobisDistance( query, group )
     %Input:
     %  query = sample matrix

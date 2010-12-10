@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % img: Binary image where white (value 1) pixels represents the background and black pixels (value 0) represents the
 % object.
 function [ X, Y ] = extractBorder( img )

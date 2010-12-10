@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % Return the maximum distance between two points in the border.
 function [ diameter ] = getDiameter(X, Y)
     diameter = - 1;

@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 function [c1, cm1, c2, cm2] = executeParzenClassifierExperiment()
     parzenWindowSize = 0.2;
     gridSize = 10;

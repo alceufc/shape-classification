@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 function [bandwidth,density,X,Y]=kde2d(data,n,MIN_XY,MAX_XY)
 %
 % fast and accurate state-of-the-art

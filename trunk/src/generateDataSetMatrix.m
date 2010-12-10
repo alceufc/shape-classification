@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 function [ dataSetMatrix ] = generateDataSetMatrix(  )
     %Warning: bad code!
     numberOfImages = 62;

@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % Each line of clusterMatrix corresponds to an instance (image). The first column is the instance class and the second
 % column is the cluster number. The cluster number is a number between 1 and the number of classes in the image base.
 function [ clusterMatrix ] = kMeansPI(dataSetMatrix)

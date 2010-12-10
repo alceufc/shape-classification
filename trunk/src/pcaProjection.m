@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % Projects the feature vectors of dataSetMatrix into 2 dimensions using
 % PCA.
 function [ pcaFeatureMatrix ] = pcaProjection( dataSetMatrix )
