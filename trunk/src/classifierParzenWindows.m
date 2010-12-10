@@ -1,85 +1,75 @@
-function [ confusionMatrix, class ] = classifierParzenWindows( query, group )
-    %Input:
-    %  query = sample matrix
-    %  group = class
-    %Output 
-    %  class:  1='ag'; 2='bg'; 3='cg'; 4='lg'; 5='me'; 6='pe'
-    %
-    
-    dataSetMatrix = generateDataSetMatrix();
-    featureMatrix = generateFeatureMatrix(dataSetMatrix);
-    
+% This code assumes that featureMatrix has only 2 columns.
+function [ targets, outputs ] = classifierParzenWindows( featureMatrix, dataSetMatrix, trainingSetMask, parzenWindowSize, dimensionSize )
     featureMatrix = zscore(featureMatrix);
-    query = zscore(query);
+    classesMatrix = extractClassesMatrix(dataSetMatrix);
     
-    [fx, fy] = size(featureMatrix);
+    trainingFeatureMatrix = featureMatrix(trainingSetMask, :);
+    trainingClasses = dataSetMatrix(trainingSetMask, size(dataSetMatrix,2));
+    parzenHistograms = generateParzenHistogram(trainingFeatureMatrix, trainingClasses, classesMatrix, parzenWindowSize, dimensionSize);
     
-    %initialize
-    matrix_ag = zeros(fx,fy); ag = 1;
-    matrix_bg = zeros(fx,fy); bg = 1;
-    matrix_cg = zeros(fx,fy); cg = 1;
-    matrix_lg = zeros(fx,fy); lg = 1;
-    matrix_me = zeros(fx,fy); me = 1;
-    matrix_pe = zeros(fx,fy); pe = 1;
+    testSetMask = ~trainingSetMask;
+    testFeatureMatrix = featureMatrix(testSetMask, :);
+    testClasses = dataSetMatrix(testSetMask, size(dataSetMatrix,2));
+    outputs = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize);
     
-    %split
-    for i=1:fx
-        if strcmp(dataSetMatrix(i,fy+1),'ag')
-            matrix_ag(ag,:) = featureMatrix(i,:);
-            ag = ag+1;
-        elseif strcmp(dataSetMatrix(i,fy+1),'bg')
-            matrix_bg(bg,:) = featureMatrix(i,:);
-            bg = bg+1;
-        elseif strcmp(dataSetMatrix(i,fy+1),'cg')
-            matrix_cg(cg,:) = featureMatrix(i,:);
-            cg = cg+1;
-        elseif strcmp(dataSetMatrix(i,fy+1),'lg')
-            matrix_lg(lg,:) = featureMatrix(i,:);
-            lg = lg+1;
-        elseif strcmp(dataSetMatrix(i,fy+1),'me')
-            matrix_me(me,:) = featureMatrix(i,:);
-            me = me+1;
-        elseif strcmp(dataSetMatrix(i,fy+1),'pe')
-            matrix_pe(pe,:) = featureMatrix(i,:);
-            pe = pe+1;
-        end
-    end
+    targets = zeros(size(testFeatureMatrix, 1), getNumberOfClasses(dataSetMatrix));
     
-    %distance
-    distancesMatrix(:,1) = ParzenWindows(matrix_ag(1:ag-1,1:2),query);
-    distancesMatrix(:,2) = ParzenWindows(matrix_bg(1:bg-1,1:2),query);
-    distancesMatrix(:,3) = ParzenWindows(matrix_cg(1:cg-1,1:2),query);
-    distancesMatrix(:,4) = ParzenWindows(matrix_lg(1:lg-1,1:2),query);
-    distancesMatrix(:,5) = ParzenWindows(matrix_me(1:me-1,1:2),query);
-    distancesMatrix(:,6) = ParzenWindows(matrix_pe(1:pe-1,1:2),query);
-    
-    %classify
-    [dmx , dmy] = size(distancesMatrix);
-    grouphat = zeros(1,dmx);
-    
-    for j=1:dmx
-         [valorMax Pos] = max(distancesMatrix(j,:));
-         grouphat(j) = Pos;
-    end
-    
-    [confusionMatrix class] = confusionmat(group,grouphat);
-          
+    for row = 1 : size(targets, 1)
+        targets(row, find(strcmp(classesMatrix, testClasses))) = 1;
+    end;
 end
 
-function d = ParzenWindows(A, B)
-    % Return parametric Bayesian distance of two data matrices 
+% parzenHistograms is a C x Dim1 x Dim2 matrix where:
+%    C: corresponds to the number of classes in classesMatrix
+%    Dim1 and Dim2: 
+function [ parzenHistograms ] = generateParzenHistogram(featMatrix, trainingClasses, classesMatrix, parzenWindowSize, dimensionSize)
+    numberOfClasses = size(classesMatrix, 1);
+    numberOfBins = ceil(dimensionSize / parzenWindowSize);
+    parzenHistograms = zeros(numberOfClasses, numberOfBins, numberOfBins);
     
-    [n , k] = size(A);
-    N = 50;
-    [bandwidth,density,X,Y]=kde2d(A,N);
+    for class = 1 : numberOfClasses
+        % Get the feature vectors for this class from
+        % trainingFeatureMatrix.
+        featVecIdxs = find(strcmp(trainingClasses(:, 1), classesMatrix(class)));
+        featVecs = featMatrix(featVecIdxs, :);
+        
+        parzenHistograms(class, :, :) = generateHistogram(featVecs, parzenWindowSize, numberOfBins);
+    end;
     
-    % plot the data and the density estimate
-    figure,
-    contour3(X,Y,density,50), hold on
-    plot(A(:,1),A(:,2),'r.','MarkerSize',5), hold on
-    plot(B(:,1),B(:,2),'b*','MarkerSize',5)
-    
-    %% TODO: NO FINISH FUNCTION 
-    d=1;
 end
 
+function [ histogram ] = generateHistogram(featVecs, parzenWindowSize, numberOfBins)
+    maxBinIdx = floor(numberOfBins/2);
+    if mod(numberOfBins, 2) == 0
+        minBinIdx = - (maxBinIdx - 1);
+    else
+        minBinIdx = - maxBinIdx;
+    end;
+    
+    histogram = zeros(numberOfBins, numberOfBins);
+    [Dim1, Dim2] = meshgrid(minBinIdx : maxBinIdx, minBinIdx : maxBinIdx);
+    Dim1 = Dim1 .* parzenWindowSize;
+    Dim2 = Dim2 .* parzenWindowSize;
+    
+    for vector = 1 : size(featVecs, 1)
+        k1 = 2 * parzenWindowSize^2;
+        k2 = 1 / (pi * k1);
+        histogram = histogram +  k2 * exp( - ((featVecs(vector,1) - Dim1).^2 + (featVecs(vector,2) - Dim2).^2) / k1 );
+    end;
+    histogram = histogram ./ size(featVecs, 1);
+end
+
+function [ outputs ] = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize)
+    numberOfVectors = size(testFeatureMatrix, 1);
+    numberOfClasses = size(parzenHistograms, 1);
+    outputs = zeros(numberOfVectors, numberOfClasses);
+    
+    for vector = 1 : numberOfVectors
+        for class = 1 : numberOfClasses
+            coord1 = round(testFeatureMatrix(1)/parzenWindowSize);
+            coord2 = round(testFeatureMatrix(2)/parzenWindowSize);
+            outputs(vector, class) = parzenHistograms(class, coord1, coord2);
+        end;
+    end;
+    
+end

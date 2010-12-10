@@ -1,0 +1,113 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.AttributeSelection -E \"weka.attributeSelection.CfsSubsetEval \" -S \"weka.attributeSelection.BestFirst -D 1 -N 30\"" -W weka.classifiers.lazy.IBk -- -K 5 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     leaves
+Instances:    62
+Attributes:   50
+              area
+              diameter
+              perimeter
+              bending_energy
+              center_of_mass_x
+              center_of_mass_y
+              number_of_peaks
+              fourier1
+              fourier2
+              fourier3
+              fourier4
+              fourier5
+              fourier6
+              fourier7
+              fourier8
+              fourier9
+              fourier10
+              fourier11
+              fourier12
+              fourier13
+              fourier14
+              fourier15
+              fourier16
+              fourier17
+              fourier18
+              fourier19
+              fourier20
+              fourier21
+              curve_fourier1
+              curve_fourier2
+              curve_fourier3
+              curve_fourier4
+              curve_fourier5
+              curve_fourier6
+              curve_fourier7
+              curve_fourier8
+              curve_fourier9
+              curve_fourier10
+              curve_fourier11
+              curve_fourier12
+              curve_fourier13
+              curve_fourier14
+              curve_fourier15
+              curve_fourier16
+              curve_fourier17
+              curve_fourier18
+              curve_fourier19
+              curve_fourier20
+              curve_fourier21
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.lazy.IBk -K 5 -W 0 -X -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\"" on data filtered through weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 30"
+
+Filtered Header
+@relation 'leaves-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval-Sweka.attributeSelection.BestFirst -D 1 -N 30'
+
+@attribute center_of_mass_x numeric
+@attribute fourier10 numeric
+@attribute curve_fourier8 numeric
+@attribute class {ag,bg,cg,lg,me,pe}
+
+@data
+
+
+Classifier Model
+IB1 instance-based classifier
+using 1 nearest neighbour(s) for classification
+
+
+Time taken to build model: 0.62 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          47               75.8065 %
+Incorrectly Classified Instances        15               24.1935 %
+Kappa statistic                          0.7097
+Mean absolute error                      0.0993
+Root mean squared error                  0.2441
+Relative absolute error                 35.7627 %
+Root relative squared error             65.5093 %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 1         0.058      0.769     1         0.87       0.978    ag
+                 0.8       0.115      0.571     0.8       0.667      0.968    bg
+                 0.6       0.058      0.667     0.6       0.632      0.938    cg
+                 0.8       0          1         0.8       0.889      0.955    lg
+                 0.6       0.038      0.75      0.6       0.667      0.885    me
+                 0.75      0.02       0.9       0.75      0.818      0.858    pe
+Weighted Avg.    0.758     0.047      0.78      0.758     0.759      0.928
+
+=== Confusion Matrix ===
+
+  a  b  c  d  e  f   <-- classified as
+ 10  0  0  0  0  0 |  a = ag
+  0  8  2  0  0  0 |  b = bg
+  0  4  6  0  0  0 |  c = cg
+  0  2  0  8  0  0 |  d = lg
+  3  0  0  0  6  1 |  e = me
+  0  0  1  0  2  9 |  f = pe
+
