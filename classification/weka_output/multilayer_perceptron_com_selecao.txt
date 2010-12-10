@@ -1,0 +1,195 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.meta.FilteredClassifier -F "weka.filters.supervised.attribute.AttributeSelection -E \"weka.attributeSelection.CfsSubsetEval \" -S \"weka.attributeSelection.BestFirst -D 1 -N 30\"" -W weka.classifiers.functions.MultilayerPerceptron -- -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a
+Relation:     leaves
+Instances:    62
+Attributes:   50
+              area
+              diameter
+              perimeter
+              bending_energy
+              center_of_mass_x
+              center_of_mass_y
+              number_of_peaks
+              fourier1
+              fourier2
+              fourier3
+              fourier4
+              fourier5
+              fourier6
+              fourier7
+              fourier8
+              fourier9
+              fourier10
+              fourier11
+              fourier12
+              fourier13
+              fourier14
+              fourier15
+              fourier16
+              fourier17
+              fourier18
+              fourier19
+              fourier20
+              fourier21
+              curve_fourier1
+              curve_fourier2
+              curve_fourier3
+              curve_fourier4
+              curve_fourier5
+              curve_fourier6
+              curve_fourier7
+              curve_fourier8
+              curve_fourier9
+              curve_fourier10
+              curve_fourier11
+              curve_fourier12
+              curve_fourier13
+              curve_fourier14
+              curve_fourier15
+              curve_fourier16
+              curve_fourier17
+              curve_fourier18
+              curve_fourier19
+              curve_fourier20
+              curve_fourier21
+              class
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+FilteredClassifier using weka.classifiers.functions.MultilayerPerceptron -L 0.3 -M 0.2 -N 500 -V 0 -S 0 -E 20 -H a on data filtered through weka.filters.supervised.attribute.AttributeSelection -E "weka.attributeSelection.CfsSubsetEval " -S "weka.attributeSelection.BestFirst -D 1 -N 30"
+
+Filtered Header
+@relation 'leaves-weka.filters.supervised.attribute.AttributeSelection-Eweka.attributeSelection.CfsSubsetEval-Sweka.attributeSelection.BestFirst -D 1 -N 30'
+
+@attribute center_of_mass_x numeric
+@attribute fourier10 numeric
+@attribute curve_fourier8 numeric
+@attribute class {ag,bg,cg,lg,me,pe}
+
+@data
+
+
+Classifier Model
+Sigmoid Node 0
+    Inputs    Weights
+    Threshold    -7.93193780076908
+    Node 6    4.480433180791525
+    Node 7    -2.418061064263085
+    Node 8    8.534890692980543
+    Node 9    -4.840687543959318
+Sigmoid Node 1
+    Inputs    Weights
+    Threshold    -2.1548401555736523
+    Node 6    -4.396985864164239
+    Node 7    -9.885672193198197
+    Node 8    2.7340265420063514
+    Node 9    3.346857008416232
+Sigmoid Node 2
+    Inputs    Weights
+    Threshold    -4.977464869300029
+    Node 6    3.5881234682742886
+    Node 7    -2.1916991653520097
+    Node 8    -3.218607357382928
+    Node 9    5.286727665543301
+Sigmoid Node 3
+    Inputs    Weights
+    Threshold    -3.111973288587602
+    Node 6    -9.582760580329994
+    Node 7    6.358812731488561
+    Node 8    2.295918323955964
+    Node 9    -1.1744029805455243
+Sigmoid Node 4
+    Inputs    Weights
+    Threshold    -0.9810189367783126
+    Node 6    3.8008235634396694
+    Node 7    -4.276577775653209
+    Node 8    -0.5365313415538606
+    Node 9    -5.943855500568605
+Sigmoid Node 5
+    Inputs    Weights
+    Threshold    -3.906806826356986
+    Node 6    0.8211555637605783
+    Node 7    5.875746166466875
+    Node 8    -12.48592786067716
+    Node 9    -2.955742069504532
+Sigmoid Node 6
+    Inputs    Weights
+    Threshold    5.989560713237718
+    Attrib center_of_mass_x    9.950974725798252
+    Attrib fourier10    -2.876754313439124
+    Attrib curve_fourier8    1.533356282349399
+Sigmoid Node 7
+    Inputs    Weights
+    Threshold    2.6712827317602144
+    Attrib center_of_mass_x    -0.4001019693887989
+    Attrib fourier10    11.772195076505655
+    Attrib curve_fourier8    -3.4170889827144415
+Sigmoid Node 8
+    Inputs    Weights
+    Threshold    0.15308393511748972
+    Attrib center_of_mass_x    -6.433428578929837
+    Attrib fourier10    2.43037765377331
+    Attrib curve_fourier8    0.9107018868054236
+Sigmoid Node 9
+    Inputs    Weights
+    Threshold    -4.778379226415597
+    Attrib center_of_mass_x    -3.390243960714649
+    Attrib fourier10    -3.1545957918469876
+    Attrib curve_fourier8    -7.001534698858746
+Class ag
+    Input
+    Node 0
+Class bg
+    Input
+    Node 1
+Class cg
+    Input
+    Node 2
+Class lg
+    Input
+    Node 3
+Class me
+    Input
+    Node 4
+Class pe
+    Input
+    Node 5
+
+
+Time taken to build model: 2.76 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances          50               80.6452 %
+Incorrectly Classified Instances        12               19.3548 %
+Kappa statistic                          0.7678
+Mean absolute error                      0.0992
+Root mean squared error                  0.2261
+Relative absolute error                 35.7351 %
+Root relative squared error             60.667  %
+Total Number of Instances               62     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.9       0.058      0.75      0.9       0.818      0.977    ag
+                 0.9       0.058      0.75      0.9       0.818      0.971    bg
+                 0.8       0.038      0.8       0.8       0.8        0.962    cg
+                 0.9       0          1         0.9       0.947      0.998    lg
+                 0.6       0.058      0.667     0.6       0.632      0.929    me
+                 0.75      0.02       0.9       0.75      0.818      0.958    pe
+Weighted Avg.    0.806     0.038      0.814     0.806     0.806      0.966
+
+=== Confusion Matrix ===
+
+ a b c d e f   <-- classified as
+ 9 0 0 0 1 0 | a = ag
+ 0 9 1 0 0 0 | b = bg
+ 0 2 8 0 0 0 | c = cg
+ 0 1 0 9 0 0 | d = lg
+ 3 0 0 0 6 1 | e = me
+ 0 0 1 0 2 9 | f = pe
+

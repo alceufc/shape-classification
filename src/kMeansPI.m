@@ -43,11 +43,6 @@ function [ clusterMatrix ] = kMeansPI(dataSetMatrix)
     end;
 end
 
-function [ numberOfClasses ] = getNumberOfClasses(dataSetMatrix)
-    classes = dataSetMatrix(:, size(dataSetMatrix,2));
-    numberOfClasses = numel(unique(classes));
-end
-
 function [newCluster] = updateCluster(row, featureMatrix, meansCoordinates)
     curDist = euclidianDist(featureMatrix(row,:), meansCoordinates(1, :));
     newCluster = 1;
