@@ -69,20 +69,23 @@ end
 function d = ParametricBayesian(A, B)
     % Return parametric Bayesian distance of two data matrices 
     
-    [n, k] = size(A);
-    [n2, k2] = size(B);
+    [n1, k1]=size(A);
+    [n2, k2]=size(B);
     
     mu = mean(A);           % mean
     sigma = cov(A);         % covariance
-    d = zeros(n2,1);
+    
+    %warning: det(cov(A)) = NaN ???
     
     for i=1:n2
-        f2=(-1/2)*(B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)';
-        f1=1./(((2*pi)^(k/2))*(det(sigma).^1/2));
-        d(i) = f1 * exp(f2);
+        
+        d(i) = exp(-0.5 * (B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)') /  (2*pi)^(k1/2) * sqrt(det(sigma));
+        
     end
     
+    
 end
+
 
 
 
