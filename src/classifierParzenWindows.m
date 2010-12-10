@@ -7,15 +7,16 @@ function [ targets, outputs ] = classifierParzenWindows( featureMatrix, dataSetM
     trainingClasses = dataSetMatrix(trainingSetMask, size(dataSetMatrix,2));
     parzenHistograms = generateParzenHistogram(trainingFeatureMatrix, trainingClasses, classesMatrix, parzenWindowSize, dimensionSize);
     
-    testSetMask = ~trainingSetMask;
+    %testSetMask = ~trainingSetMask;
+    testSetMask = trainingSetMask;
     testFeatureMatrix = featureMatrix(testSetMask, :);
     testClasses = dataSetMatrix(testSetMask, size(dataSetMatrix,2));
-    outputs = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize);
+    outputs = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize, dimensionSize);
     
     targets = zeros(size(testFeatureMatrix, 1), getNumberOfClasses(dataSetMatrix));
     
     for row = 1 : size(targets, 1)
-        targets(row, find(strcmp(classesMatrix, testClasses))) = 1;
+        targets(row, find(strcmp(classesMatrix, testClasses(row)))) = 1;
     end;
 end
 
@@ -52,22 +53,27 @@ function [ histogram ] = generateHistogram(featVecs, parzenWindowSize, numberOfB
     Dim2 = Dim2 .* parzenWindowSize;
     
     for vector = 1 : size(featVecs, 1)
-        k1 = 2 * parzenWindowSize^2;
+        sigma = parzenWindowSize*4;
+        k1 = 2 * sigma^2;
         k2 = 1 / (pi * k1);
         histogram = histogram +  k2 * exp( - ((featVecs(vector,1) - Dim1).^2 + (featVecs(vector,2) - Dim2).^2) / k1 );
     end;
     histogram = histogram ./ size(featVecs, 1);
 end
 
-function [ outputs ] = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize)
+function [ outputs ] = estimateProbabilities(parzenHistograms, testFeatureMatrix, parzenWindowSize, dimensionSize)
     numberOfVectors = size(testFeatureMatrix, 1);
     numberOfClasses = size(parzenHistograms, 1);
     outputs = zeros(numberOfVectors, numberOfClasses);
     
+    % Calculate the indexes of the center of the histogram matrix.
+    numberOfBins = ceil(dimensionSize / parzenWindowSize);
+    centerIdx = ceil(numberOfBins/2);
+    
     for vector = 1 : numberOfVectors
         for class = 1 : numberOfClasses
-            coord1 = round(testFeatureMatrix(1)/parzenWindowSize);
-            coord2 = round(testFeatureMatrix(2)/parzenWindowSize);
+            coord1 = round(testFeatureMatrix(vector, 1)/parzenWindowSize) + centerIdx;
+            coord2 = round(testFeatureMatrix(vector, 2)/parzenWindowSize) + centerIdx;
             outputs(vector, class) = parzenHistograms(class, coord1, coord2);
         end;
     end;
