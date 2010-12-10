@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % sigmaFactor is used to compute the std. deviation (sigma) of the gaussian filter using the following expression:
 %     sigma = sigmaFactor * N, where N is the number of points in the border.
 %

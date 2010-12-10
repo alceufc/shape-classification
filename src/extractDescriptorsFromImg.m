@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % imgFileName is the path to the segmented image file. The image file must have only one object.
 function [ descriptors ] = extractDescriptorsFromImg( imgFileName )
     addpath('./descriptors');

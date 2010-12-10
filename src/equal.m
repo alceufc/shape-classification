@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 function resul=equal(a,b)
 % Enter two words 'a' and 'b', and compared whether they are equal
 

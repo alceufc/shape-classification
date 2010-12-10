@@ -1,3 +1,9 @@
+% SCC 5830 - Processamento de Imagens
+% Alceu Ferraz Costa
+% Frizzi San Roman Salazar
+%
+% Dezembro 2010
+%
 % Since the border of the image may have been smoothed, the assumption that the distance between two points in the
 % border is 1 does not holds. This function computes the perimeter by computing and summing the distance between every 
 % two consecutives points.
