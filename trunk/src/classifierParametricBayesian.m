@@ -77,24 +77,33 @@ function d = ParametricBayesian(A, B)
     
     [n1, k1]=size(A);
     [n2, k2]=size(B);
-    
-    mu = mean(A);           % mean
-    sigma = cov(A);         % covariance
+    n=n1+n2;
     
     %warning: det(cov(A)) = NaN ???
     
     for i=1:n2
+    
+        mu = mean(A) - mean(B(i,:));            % mean
+        sigmaA = Covariance(A);                 % COVARIANCE
+        sigmaB = Covariance(B(i,:));
+        sigma = n1/n*sigmaA + n2/n*sigmaB;      % pooled covariance matrix
         
-        d(i) = exp(-0.5 * (B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)') /  (2*pi)^(k1/2) * sqrt(det(sigma));
+        d(i) = exp(-0.5 * (B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)') /  (2*pi)^(k1/2) * sqrt(det(sigma+eps));
         
     end
     
     
 end
 
+function C=Covariance(X)
+    % Return covariance given data matrix X (row = object, column = feature)
 
-
-
+    [n,k]=size(X);
+    
+    Xc = X-repmat(mean(X),n,1);   % centered data
+    C = Xc'*Xc/n;                % covariance
+ 
+end
 
 
 
