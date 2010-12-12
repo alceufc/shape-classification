@@ -4,7 +4,7 @@
 %
 % Dezembro 2010
 %
-function [ confusionMatrix, class ] = classifierParametricBayesian2( query, group )
+function [ confusionMatrix, class ] = classifierParametricBayesian( query, group )
     %Input:
     %  query = sample matrix
     %  group = class
@@ -81,7 +81,7 @@ function d = ParametricBayesian(A, B)
     [mu,sigma] = normfit(A);
     
     for i=1:n2
-        d(i) = exp((-0.5 * (B(i,:)-mu).*(sigma.^-1)*(B(i,:)-mu)')) /  (2*pi)^(k1/2) * sqrt(norm(sigma));
+        d(i) = exp((-0.5 * (B(i,:)-mu).*(sigma)*(B(i,:)-mu)')) /  (2*pi)^(k1/2) * sqrt(norm(sigma));    
     end
     
     
