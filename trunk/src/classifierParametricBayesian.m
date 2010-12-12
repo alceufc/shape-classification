@@ -64,7 +64,7 @@ function [ confusionMatrix, class ] = classifierParametricBayesian( query, group
     grouphat = zeros(1,dmx);
     
     for j=1:dmx
-         [valorMax Pos] = max(distancesMatrix(j,:));
+         [~, Pos] = max(distancesMatrix(j,:));
          grouphat(j) = Pos;
     end
     
@@ -83,12 +83,16 @@ function d = ParametricBayesian(A, B)
     
     for i=1:n2
     
+        
         mu = mean(A) - mean(B(i,:));            % mean
+       
         sigmaA = Covariance(A);                 % COVARIANCE
         sigmaB = Covariance(B(i,:));
         sigma = n1/n*sigmaA + n2/n*sigmaB;      % pooled covariance matrix
+        sigma = abs(sigma);
         
-        d(i) = exp(-0.5 * (B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)') /  (2*pi)^(k1/2) * sqrt(det(sigma+eps));
+        
+        d(i) = exp(abs((-0.5 * (B(i,:)-mu)*(sigma^-1)*(B(i,:)-mu)'))) /  (2*pi)^(k1/2) * sqrt(det(sigma));
         
     end
     
